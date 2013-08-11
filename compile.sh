@@ -7,7 +7,7 @@
 # e-mail:   ocefpaf@gmail
 # web:      http://ocefpaf.github.io/
 # created:  09-Aug-2013
-# modified: Fri 09 Aug 2013 06:35:18 PM BRT
+# modified: Sun 11 Aug 2013 07:24:32 PM BRT
 #
 # obs:
 #
@@ -33,6 +33,6 @@ DOCX="--to html --output ${DIR}/homework.html"
 HTML="--to docx --output ${DIR}/homework.docx"
 LATEX="--to latex --output ${DIR}/homework.pdf"
 
-pandoc $OPTION $FROM $HTML
-pandoc $OPTION $FROM $DOCX
+#pandoc $OPTION $FROM $HTML
+#pandoc $OPTION $FROM $DOCX
 pandoc $OPTION $FROM $LATEX
