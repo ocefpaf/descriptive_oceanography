@@ -10,19 +10,13 @@ title: Cronograma
 Plano de Aula
 =============
 
-Curso: Oceanografia
-
-Disciplina: Oceanografia Descritiva
+Disciplina: Oceanografia Descritiva (Curso: Oceanografia / Ciclo/mod. 1/1B)
 
 Professor: Filipe Fernandes
 
-Ciclo/mod: 1/1B
-
 Turno: Matutino
 
-Ano: 2013
-
-Semestre: 2º
+Semestre: 2º -- 2013
 
 Turma: OCE1BM-VMA
 
@@ -30,7 +24,7 @@ Ementa:
 Introdução à Oceanografia Física. Conceitos, estrutura e características gerais
 dos oceanos.
 
-BIBLIOGRAFIA BÁSICA:
+Bibliografia básica:
 --------------------
 
 * GARRISON, Tom; MIYAJI, Cíntia (Trad.). Fundamentos de oceanografia. São Paulo: Cengage Learning, 2009. 426 p. ISBN 9788522106776.
@@ -40,7 +34,7 @@ BIBLIOGRAFIA BÁSICA:
 * SVERDRUP, K. A., Duxbury A. B., Duxbury, A. C. 2006. Fundamentals of Oceanography. McGraw Hill, 5th edition. Número de Chamada: 551.46 S968f 2006.
 
 
-BIBLIOGRAFIA COMPLEMENTAR:
+Bibliografia complementar:
 --------------------------
 * STEWAT, R. H. 2002. Introduction to Physical Oceanography. Department of Oceanography. Texas A. M. University.
 
@@ -52,28 +46,28 @@ BIBLIOGRAFIA COMPLEMENTAR:
 
 * TOMCZAK, Matthias.  Physical oceanography.   Australia  The Flinders University of South Australia,  2002. 1 CD-ROM:  son., color  Disponível em: http://www.es.flinders.edu.au/~mattom/regoc/pdfversion.html.
 
-| Data          | Conteúdo                              | Lista/Prova         |
-|:------------- |:--------------------------------------| -------------------:|
-| 2013-08-09    | Introdução à Oceanografia Física 1    |                     |
-| 2013-08-16    | Introdução à Oceanografia Física 2    | Lista 1             |
-| 2013-08-23    | Dimensões e formas dos oceanos 1      | Lista 2             |
-| 2013-08-30    | Dimensões e formas dos oceanos 2      | Lista 3             |
-| 2013-09-06    | Propriedades físicas da água do mar 1 | Lista 4             |
-| 2013-09-13    | Propriedades físicas da água do mar 2 | Lista 5             |
-| 2013-09-20    | Distribuição espacial e temporais 1   | Lista 6             |
-| 2013-09-27    | Distribuição espacial e temporais 2   | Lista 7             |
-| 2013-10-04    |                                       | Prova 1             |
-| 2013-10-11    | Leis de conservação 1                 | Revisão Prova 1     |
-| 2013-10-18    | Leis de conservação 2                 | Lista 8             |
-| 2013-10-25    | Circulação e massas d'água 1          | Lista 9             |
-| 2013-11-01    | Circulação e massas d'água 2          | Lista 10            |
-| 2013-11-08    | Oc. costeira e estuarina 1            | Análise de dados    |
-| 2013-11-15    |                                       | Feriado             |
-| 2013-11-22    | Oc. costeira e estuarina 2            | Lista 11            |
-| 2013-11-29    |                                       | Seminário           |
-| 2013-12-06    |                                       | Prova 2             |
-| 2013-12-13    |                                       | Revisão             |
-| 2013-12-20    |                                       | Prova Alternativa   |
+| Aula | Data          | Conteúdo                              | Lista/Prova         |
+|:----:|:--------------|:--------------------------------------| -------------------:|
+| 01   | 2013-08-09    | Introdução à Oceanografia Física 1    |                     |
+| 02   | 2013-08-16    | Introdução à Oceanografia Física 2    | Lista 1             |
+| 03   | 2013-08-23    | Dimensões e formas dos oceanos 1      | Lista 2             |
+| 04   | 2013-08-30    | Dimensões e formas dos oceanos 2      | Lista 3             |
+| 05   | 2013-09-06    | Propriedades físicas da água do mar 1 | Lista 4             |
+| 06   | 2013-09-13    | Propriedades físicas da água do mar 2 | Lista 5             |
+| 07   | 2013-09-20    | Distribuição espacial e temporais 1   | Lista 6             |
+| 08   | 2013-09-27    | Distribuição espacial e temporais 2   | Lista 7             |
+|      | 2013-10-04    |                                       | Prova 1             |
+|      | 2013-10-11    | Leis de conservação 1                 | Revisão Prova 1     |
+| 11   | 2013-10-18    | Leis de conservação 2                 | Lista 8             |
+| 12   | 2013-10-25    | Circulação e massas d'água 1          | Lista 9             |
+| 13   | 2013-11-01    | Circulação e massas d'água 2          | Lista 10            |
+| 14   | 2013-11-08    | Oc. costeira e estuarina 1            | Análise de dados    |
+|      | 2013-11-15    |                                       | Feriado             |
+| 15   | 2013-11-22    | Oc. costeira e estuarina 2            | Lista 11            |
+|      | 2013-11-29    |                                       | Seminário           |
+|      | 2013-12-06    |                                       | Prova 2             |
+|      | 2013-12-13    |                                       | Revisão             |
+|      | 2013-12-20    |                                       | Prova Alternativa   |
 
 Detalhamento do plano de ensino – 1ª fase
 -----------------------------------------
