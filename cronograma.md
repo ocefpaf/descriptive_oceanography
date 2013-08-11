@@ -1,11 +1,14 @@
-<!-- pandoc --latex-engine=xelatex --mathjax --smart --normalize --standalone --highlight-style=pygments --webtex --from markdown cronograma.md --to latex --output cronograma.pdf -->
-
 ---
 authors:
 - Filipe Fernandes
 date: '09-Agosto-2013'
 title: Cronograma
 ...
+
+<!-- pandoc --latex-engine=xelatex --mathjax --smart --normalize --standalone --highlight-style=pygments --webtex --from markdown cronograma.md --to latex --output cronograma.pdf -->
+
+Plano de Aula
+=============
 
 Curso: Oceanografia
 
@@ -48,10 +51,6 @@ BIBLIOGRAFIA COMPLEMENTAR:
 * TIPLER, Paul Allen.  Física para cientistas e engenheiros.  4. ed. Rio de Janeiro:  LTC,  2006. v.1.
 
 * TOMCZAK, Matthias.  Physical oceanography.   Australia  The Flinders University of South Australia,  2002. 1 CD-ROM:  son., color  Disponível em: http://www.es.flinders.edu.au/~mattom/regoc/pdfversion.html.
-
-
-Plano de Aula
--------------
 
 | Data          | Conteúdo                              | Lista/Prova         |
 |:------------- |:--------------------------------------| -------------------:|
