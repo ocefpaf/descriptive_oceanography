@@ -1,0 +1,758 @@
+
+% Title page.
+\title[Aula 02]{Oceanografia Física Descritiva}
+\subtitle{Dimensões dos oceanos e Propriedades físicas da água do mar}
+\author[Filipe Fernandes]{Filipe P. A. Fernandes}
+\institute[unimonte]{Centro Universitário Monte Serrat}
+\date[Agosto 2013]{15 de Agosto 2013}
+
+\logo{\includegraphics[scale=0.15]{../common/university_logo.png}}
+
+\begin{document}
+
+% The title page frame.
+\begin{frame}[plain]
+  \titlepage
+    \begin{center}
+    \includegraphics[scale=0.5]{../common/by-nc-sa.pdf}
+  \end{center}
+\end{frame}
+
+\section*{Outline}
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+
+\section{Propriedades físicas da água do mar}
+\begin{frame}
+\frametitle{Leitura}
+    \begin{block}{}
+        Capítulos 3.6, 6.1, 6.2, 6.5 do Stewart.
+
+        \small{\url{http://oceanworld.tamu.edu/resources/ocng_textbook/contents.html}}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{O que observamos/estimamos no oceano?}
+Variáveis observadas:
+    \small{
+    {\bf
+    \begin{itemize}[<+-| alert@+>]
+    \item Temperatura
+    \item Salinidade
+    \item Pressão
+    \item Elevação do nível do mar
+    \end{itemize}
+    }}
+    \pause
+Variáveis estimadas:
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Densidade da água do mar
+    \item Densidade Potencial
+    \item Velocidade do som
+    \end{itemize}
+    }
+\end{frame}
+
+\subsection{Temperatura}
+\begin{frame}
+\frametitle{Definição de temperatura}
+    \small{
+    \begin{block}{}
+    Propriedade termodinâmica do fluido que mede a energia cinética associada
+    ao movimento desordenado dos átomos e moléculas.
+    \end{block}
+    }
+    \pause
+    \begin{center}
+        \includegraphics[scale=0.35]{../figures/temperatura.png}
+    \end{center}
+    \pause
+    \footnotesize{
+    \begin{itemize}[<+-| alert@+>]
+    \item Quanto maior a atividade (energia), maior a temperatura;
+    \item Temperatura é uma medida do calor armazenado;
+    \item Unidades: \textcelsius, K.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Como medir temperatura?}
+    É a propriedade do oceano que pode ser mais precisamente medida.
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item {\bf Expansão de um líquido ou metal};
+    \item Diferença na expansão de dois metais;
+    \item Pressão de vapor de um líquido;
+    \item {\bf Variação na resistência elétrica};
+    \item {\bf Radiação de microondas da superfície do mar}.
+    \item Radiação infravermelho da superfície do mar;
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Como medir temperatura?}
+    Termômetros de mercúrio
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Desenvolvimento do termômetro de reversão por Negretti e Zambra em
+          1874;
+    \item Separa o mercúrio na coluna expandida e captura a temperatura na
+          profundidade da inversão;
+    \item Variações na temperatura ainda causam pequenas alterações na
+          quantidade de mercúrio;
+    \item Estas alterações podem ser corrigidas no momento da leitura da
+          temperatura no navio;
+    \item Precisão: 0,01\textcelsius.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Termômetros de mercúrio}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+    \begin{center}
+        \shadowbox{\includegraphics[scale=0.2]{../figures/reversing_thermometer.jpg}}
+    \end{center}
+        \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{center}
+        \shadowbox{\includegraphics[scale=0.4]{../figures/reversing_bottle.png}}
+    \end{center}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Garrafas de reversão}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Amostragem não uniforme com a profundidade;
+    \item Efeito da pressão sobre a temperatura em função da profundidade;
+    \item Estações hidrográficas com termômetros reversíveis ainda são
+          considerados métodos mais confiáveis de medida do oceano!
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Como medir temperatura?}
+    Termômetros de resistência
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Batitermógrafo descartável (XBT): método mais efetivo a baixo custo
+          para obtenção de perfis de temperatura;
+    \item Baseado na propriedade que a resistência elétrica dos metais muda
+          com a temperatura;
+    \item Metais mais comuns: cobre, platina e níquel. Platina é o mais
+          estável e por isso os termômetros de resistência de platina
+          tornaram-se padrão para as escalas internacionais de temperatura;
+    \item Precisão: $\pm 0,001$\textcelsius.
+
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Termômetros de resistência: XBT}
+    \begin{center}
+        \shadowbox{\includegraphics[scale=0.35]{../figures/xbt.png}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Como medir temperatura?}
+    Perfilador CTD
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Perfilador de alta precisão de Condutividade e Temperatura em
+          função da profundidade (CTD);
+    \item Outros sensores podem ser acoplados como: oxigênio, pH, fluorômetro;
+    \item Taxa de amostragem pode ser ajustada (2 amostras/s até 1 amostra/4min);
+    \item Temperatura: medida por termistor;
+    \item Condutividade: por indução;
+    \item Pressão: cristal de quartzo.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{CTD}
+    \begin{center}
+        \shadowbox{\includegraphics[scale=0.15]{../figures/ctd_rosette_launch.png}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Projeto ARGO}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+    \begin{center}
+        \includegraphics[scale=1]{../figures/argo_map.png}
+    \end{center}
+        \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{center}
+       \includegraphics[scale=1]{../figures/argo_cycle.png}
+    \end{center}
+    \end{column}
+    \end{columns}
+        \begin{center}
+        \includegraphics[scale=0.12]{../figures/argo_01.png}    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Relação entre temperatura e calor}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Calor: forma de energia.
+    \item Unidade: Joule [J] = 1 kg m$^{-2}$ s$^{-1}$
+    \item Variação de calor por unidade de tempo:
+        $\frac{dQ}{dt} = [\text{W}] = 1 \text{Watt} = 1 \text{J} s^{-1}$
+    \item Fluxo de calor (F):
+        $\frac{\text{Energia}}{\text{area tempo}} = \frac{\text{F}}{\text{s m}^{2}} = \frac{\text{W}}{\text{m}^2}$
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Fluxo de calor pela superfície para o oceano em [W m$^{-2}$]}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/heat_flux.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperatura média da superfície: Inverno  [\textcelsius]}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/mean_temperature.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperatura em função da latitude}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/latitude_temperature.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperatura potencial}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Água do mar não é totalmente incompressível;
+    \item Quanto mais fundo, maior o efeito do aquecimento devido à compressão
+          da pressão hidrostática;
+    \item Temperatura potencial: temperatura que a água teria se a movêssemos
+          adiabaticamente para um outro nível de pressão;
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperatura potencial}
+    \begin{center}
+        \includegraphics[scale=0.45]{../figures/potential_temperature.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperatura potencial vs temperatura {\it in situ}}
+    \begin{center}
+        \includegraphics[scale=0.35]{../figures/potential_vs_insitu_temperature.png}
+    \end{center}
+\end{frame}
+
+\subsection{Salinidade e condutividade}
+\begin{frame}
+\frametitle{Salinidade e condutividade}
+    \begin{block}{}
+        A água do mar é uma mistura de 96,5\% de moléculas de água pura e cerca
+        de 3,5\% de outros materiais, tais como sais, gases dissolvidos,
+        substâncias orgânicas e partículas não solúveis.
+    \end{block}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item O gelo flutua. Isso é importante para a vida em lagos de água doce,
+    já que o gelo atua como um isolante térmico nas perdas adicionais de calor,
+    prevenindo que a água congele totalmente da superfície ao fundo;
+    \item A densidade mostra um decréscimo rápido conforme o ponto de
+    congelamento se aproxima. A expansão resultante durante o congelamento é a
+    maior causa do intemperismo de rochas.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Água sem Sal!?}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item O ponto de congelamento diminui sob pressão. Como consequência,
+    derretimento ocorre na base das geleiras, o que facilita o seu deslocamento.
+    \item Pontes de hidrogênio cedem sob pressão, i.e., o gelo sob pressão se
+    torna mais plástico. Como consequência, o gelo terrestre da Antártica e do
+    ártico fluem, e quebrando pedaços na sua porção mais externa que formam os
+    icebergs. Sem esse processo, toda a água das regiões polares eventualmente se
+    tornariam gelo.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Água com Sal!}
+    \small{
+    \begin{block}{}
+        A água do mar contem em seu peso 3,5\% sais, gases, substâncias
+        orgânicas e material particulado.  A presença adicional dos sais
+        influencia na maioria das propriedades físicas da água do mar
+        (densidade, compressibilidade, ponto de congelamento, temperatura da
+        densidade máxima) em algum grau, mas não são os fatores que os
+        condicionam.
+    \end{block}
+
+    \pause
+    \begin{block}{}
+        Algumas propriedades (viscosidade, absorção de luz) não são
+        significativamente afetada pela salinidade (detalhe: o material
+        dissolvido e particulado afeta a absorção de luz, e de fato, essa
+        influência é usada na maioria das aplicações ópticas).
+
+        Duas propriedades que são determinadas pela quantidade de sais na água
+        são a condutividade e a pressão osmótica.
+    \end{block}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Água com sal}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item O ponto de congelamento diminui sob pressão. Como consequência,
+    derretimento ocorre na base das geleiras, o que facilita o seu deslocamento.
+    \item Pontes de hidrogênio cedem sob pressão, i.e., o gelo sob pressão se
+    torna mais plástico. Como consequência, o gelo terrestre da Antártica e do
+    ártico fluem, e quebrando pedaços na sua porção mais externa que formam os
+    icebergs. Sem esse processo, toda a água das regiões polares eventualmente se
+    tornariam gelo.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Definição de salinidade}
+    \small{
+    \begin{block}{}
+    Quantidade de matéria dissolvida (expressa em gramas) por quilograma de
+    água do mar.
+    \end{block}
+    }
+    \pause
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Já foi expressa em partes por mil (\textperthousand) e por UPS
+    (unidade prática de salinidade).  O padrão hoje preferido pela UNESCO é
+    expressar salinidade sem unidades pois representa massa/massa [{\bf !}].
+    Conceito muito útil pois a constituição da água do mar é varia
+    muito pouco para diferentes regiões do oceano global.
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Como medir salinidade}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Evaporar a água do mar e pesar o resíduo (método primitivo).
+    \item Determinar a quantidade de cloro, bromo e iodo para medir a
+          clorinidade através de titulação com sulfato de prata (método
+          antigo).
+    \item Relação salinidade e clorinidade: S = 1,80655\textcelsius.
+    \item Precisão de 0,025.
+    \item Este método foi utilizado até o Ano Internacional Geofísico, 1957.
+    \item Medida da condutividade (método moderno).
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Condutividade}
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item A condutividade da água do mar depende da temperatura e salinidade.
+          Através da medida precisa da temperatura, a salinidade pode ser
+          determinada.
+    \item Precisão: 0,001.
+    \item A precisão da determinação da salinidade depende da precisão da água
+          do mar utilizada para calibrar os instrumentos que medem a condutividade.
+    \item Como medir a salinidade a partir da condutividade?
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Salinidade global média}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/mean_salinity.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Salinidade no Atlântico}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/salinity_atlantic.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Precipitação menos Evaporação}
+    \begin{center}
+        \includegraphics[scale=0.35]{../figures/evaporation_precipitation.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Instrumentos}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/salinity_instruments.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Medição do nível médio do mar}
+Variação no oceano:
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Uma das formas mais antigas de observação oceânica;
+    \item Melhor informação sobre mudanças climáticas globais.
+    \item Causas da variabilidade:
+        \begin{enumerate}[<+-| alert@+>]
+            \item curto--termo: ondas e marés; mudanças na pressão atmosférica,
+                  descarga de rios, flutuações do vento no oceano;
+            \item longo--termo: estérico (variações na densidade) ou eustático
+                  (variação na massa);
+            \item subsidência costeira.
+        \end{enumerate}
+    \item Observações de longo--termo na altura refletem variações da:
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Medição do nível médio do mar}
+    \small{
+    \begin{itemize}
+    \item Observações de longo--termo na altura refletem variações da:
+        \begin{enumerate}[<+-| alert@+>]
+            \item Circulação oceânica de larga–escala;
+            \item Tensão de cisalhamento do vento;
+            \item Volume dos oceanos.
+        \end{enumerate}
+    \end{itemize}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{Marégrafos de bóia}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \small{
+        \begin{itemize}[<+-| alert@+>]
+            \item Marégrafos de boia e contrapeso: próprias para instalação em
+                  estruturas fixas (piers);
+            \item Mede deslocamento vertical de uma boia colocada na superfície
+                  do mar;
+            \item Sistema de cabo e contrapeso acopla boia à polia ligada a
+                  um registrador mecânico ou eletrônico.
+        \end{itemize}
+        }
+        \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/maregrafo.png}
+    \end{center}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Altimetria por Satélite}
+    \begin{center}
+       \includegraphics[scale=0.35]{../figures/altimetria.png}
+    \end{center}
+\end{frame}
+
+\subsection{Pressão}
+\begin{frame}
+\frametitle{Pressão e profundidade}
+Variação no oceano:
+    \small{
+    \begin{itemize}[<+-| alert@+>]
+    \item Profundidade: 0 -- 11000 m
+    \item Pressão: 0 -- 11000 dbar
+    \end{itemize}
+    }
+    \pause
+    Mas o que é pressão?
+    \pause
+    \begin{block}{}
+        Pressão: força normal por unidade de área exercida pela água.
+
+        Unidade: Pascal $\rightarrow$ 1 Pascal = 1 N m$^{-2}$
+    \end{block}
+
+    \begin{block}{}
+        A pressão atmosférica é usualmente medida em bar:
+        1 bar = 106 dinas cm$^{-2}$ = 105 N m$^{-2}$
+
+        A pressão no oceano é usualmente medida em dbar:
+        1 dbar = 10$^{-1}$ bar = 105 dinas cm$^{-2}$ = 104 Pascal.
+    \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pressão X profundidade}
+    \begin{block}{}
+    A medida de profundidade é baseada na medida da pressão hidrostática.
+    Isto é possível devido a relação quase linear entre $p = p(z)$ e $z$;
+    \end{block}
+
+    \pause
+    \begin{block}{}
+    Abaixo de 4000 m, a diferença é menor que 2\%.
+    $p(z) = -g\int^0_z\rho(z)dz,$
+
+    $g = 9,81$ m s$^{-2}$,
+
+    $\rho = 1,025 \times 10^3$ kg m$^{-3}$
+
+    $\rho = 1025 (9,81)z = 1,005525z$[dbar].
+    \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pressão hidrostática}
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+        \small{
+        \begin{itemize}[<+-| alert@+>]
+            \item Técnicas de medição: perfil contínuo (CTD) ou determinação
+                  em profundidades discretas;
+            \item Discreta: Determinação da pressão termométrica combinando
+                  termômetro protegido e desprotegido para sentir os efeitos
+                  da pressão na temperatura;
+            \item Considerado o método mais preciso para se determinar a
+                  pressão hidrostática;
+            \item Usado para calibrar perfis de CTD.
+        \end{itemize}
+        }
+        \end{column}
+    \begin{column}{0.3\textwidth}
+    \begin{center}
+        \shadowbox{\includegraphics[scale=0.15]{../figures/reversing_thermometer.jpg}}
+    \end{center}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Profundidade por velocidade de queda}
+        \small{
+        \begin{itemize}[<+-| alert@+>]
+            \item Batitermógrafo descartável (XBT): método mais efetivo a baixo
+                  custo para obtenção de perfis de temperatura;
+            \item XBTs não medem profundidade diretamente mas a inferem pelo
+                  ``tempo de queda'' do instrumento;
+            \item Esta pode ser uma possível fonte de erro nas medidas;
+            \item Erros na profundidade do XBT foram primeiramente reportados
+                  por Flierl e Robinson (1977).
+        \end{itemize}
+        }
+    \pause
+    \begin{block}{}
+    Thadathil, Pankajakshan, A. K. Saran, V. V. Gopalakrishna, P. Vethamony, Nilesh Araligidad, Rick Bailey, 2002: XBT Fall Rate in Waters of Extreme Temperature: A Case Study in the Antarctic Ocean. J. Atmos. Oceanic Technol., 19, 391–396.
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Profundidade por velocidade de queda}
+    \begin{center}
+        \shadowbox{\includegraphics[scale=0.35]{../figures/xbt.png}}
+    \end{center}
+\end{frame}
+
+
+\subsection{Densidade}
+\begin{frame}
+\frametitle{Densidade da água do mar}
+    \begin{block}{}
+    \begin{center}
+        $\rho = \rho(S, T, p)$
+    \end{center}
+    \end{block}
+    \pause
+    \footnotesize{
+    \begin{itemize}[<+-| alert@+>]
+    \item Unidade: massa/volume (kg/m$^3$)
+    \item Densidade máxima da água pura ocorre a 4\textcelsius, na pressão
+          atmosférica:\\
+             $\rho$(0, 4\textcelsius, 1 bar) = 1000 kg m$^{-3}$ = 1 g cm$^{-3}$
+    \item Densidade da água do mar: 1025 kg m na superfície até 1050 kg m$^{-3}$
+          no fundo do mar, devido à compressão.
+    \item $\sigma = \rho -1000$ kg m$^{-3}$
+    \item Importante: a dependência da densidade com T e S é não--linear.
+    \item Calculada a partir da equação de estado da água do mar.
+    \end{itemize}
+    }
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Relações de TS com a densidade}
+    \begin{center}
+        \includegraphics[scale=0.42]{../figures/densidade.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{\small{Isopicnais -- derivada da equação de estado da água do mar.}}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/equation_of_state.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Para pensar...}
+    \footnotesize{
+    \begin{itemize}[<+-| alert@+>]
+    \item O ponto de congelamento da água do mar diminui conforme aumenta a
+          salinidade.
+    \item A temperatura da densidade máxima diminui conforme a
+          salinidade aumenta.
+    \item Formação de gelo marinho:
+    \url{http://www.bbc.co.uk/nature/15835017}
+    \end{itemize}
+    }
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Efeito da pressão na densidade: Densidade Potencial}
+    \footnotesize{
+    \begin{itemize}[<+-| alert@+>]
+    \item A água do mar é compressível, embora não tanto quanto o gás.
+    \item Maiores variações na água do mar são causadas pela variação da
+          pressão.
+    \item Densidade potencial: densidade de uma parcela quando deslocada
+          adiabaticamente a uma pressão de referência: e.g. superfície.
+    \item $\sigma_t = \sigma(S, T, 0)$
+    \item Água mais fria é mais compressível que água mais morna.
+    \item Portanto, água fria se torna mais densa que água morna quando
+          submergem à mesma pressão. Exemplo: água do Mediterrâneo e da
+          Groenlândia.
+    \end{itemize}
+    }
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Efeitos de TS na compressibilidade}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[scale=0.4]{../figures/compressibilidade_densidade.png}
+      \end{center}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \small{
+      \begin{itemize}[<+-| alert@+>]
+        \item Parcela mais quente e salgada referenciada na superfície é mais
+              densa que a parcela mais fria e doce;
+        \item A 4000 dbar, a parcela quente e salgada é mais leve que a fria e
+              doce.
+      \end{itemize}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\subsection{Som}
+\begin{frame}
+\frametitle{Som na água}
+    \begin{block}{}
+        Mas porque estudar o som?
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Som na água}
+    \footnotesize{
+    \begin{itemize}
+    \item O som se propaga como uma onda de pressão;
+    \item Pode transmitir informação sobre grandes distâncias no oceano;
+    \item Usado para medir propriedades do fundo do oceano, profundidade do
+          oceano, temperatura e correntes. (Baleias utilizam o som para
+          navegar, comunicar a grandes distâncias e procurar comida.)
+    \item A velocidade do som no oceano varia com a temperatura, salinidade e
+          pressão.
+    \item Valores típicos: 1450 m s$^{-1}$ a 1550 m s$^{-1}$
+    \end{itemize}
+    }
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Variação do som com T e S}
+    \begin{center}
+        \includegraphics[scale=0.4]{../figures/som.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Canal do som}
+  \begin{block}{}
+    O som se propaga por grandes distâncias no canal.
+  \end{block}
+
+    \begin{center}
+        \includegraphics[scale=0.7]{../figures/sound_channel.png}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Dever de casa 01}
+  \begin{block}{}
+    Plotar os perfis de temperatura, salinidade dos dados fornecidos*.
+
+    Discutir as propriedades que eu deixei de fora: Luz, nutrientes e etc
+
+    Desafio: Plotar um diagrama TS.
+    \end{block}
+
+    \pause
+    \begin{block}{}
+        * e-mail? Dropbox?
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Aula de reposição...}
+  \begin{block}{}
+    Não teremos aula nos dias 23 e 30 de Agosto.
+  \end{block}
+\end{frame}
+
+\end{document}
