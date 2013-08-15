@@ -7,7 +7,7 @@
 # e-mail:   ocefpaf@gmail
 # web:      http://ocefpaf.github.io/
 # created:  09-Aug-2013
-# modified: Sun 11 Aug 2013 07:24:32 PM BRT
+# modified: Thu 15 Aug 2013 08:13:32 PM BRT
 #
 # obs:
 #
@@ -27,17 +27,17 @@ cat common/handouts.tex common/header.tex ${DIR}/lecture.tex > $handouts
 OPTION="--mathjax --smart --normalize --standalone \
         --highlight-style=pygments --webtex"
 FROM="--from markdown homework.md"
-DOCX="--to html --output ${datestring}_OM_homework.html"
-HTML="--to docx --output ${datestring}_OM_homework.docx"
-LATEX="--to latex --output ${datestring}_OM_homework.pdf"
+DOCX="--to html --output ${datestring}_OcFis_homework.html"
+HTML="--to docx --output ${datestring}_OcFis_homework.docx"
+LATEX="--to latex --output ${datestring}_OcFis_homework.pdf"
 
 pushd ${DIR}
     OPTS="-pdf -latexoption=-interaction=batchmode"
     # Slides.
-    $LATEXMK $OPTS --jobname=${datestring}_OM_slides $slides
+    $LATEXMK $OPTS --jobname=${datestring}_OcFis_slides $slides
 
     # Handouts.
-    $LATEXMK $OPTS --jobname=${datestring}_OM_handouts $handouts
+    $LATEXMK $OPTS --jobname=${datestring}_OcFis_handouts $handouts
 
     # Homework.
     $PANDOC $OPTION $FROM $LATEX
