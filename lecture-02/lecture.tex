@@ -4,7 +4,7 @@
 \subtitle{Dimensões dos oceanos e Propriedades físicas da água do mar}
 \author[Filipe Fernandes]{Filipe P. A. Fernandes}
 \institute[unimonte]{Centro Universitário Monte Serrat}
-\date[Agosto 2013]{15 de Agosto 2013}
+\date[Agosto 2013]{16 de Agosto 2013}
 
 \logo{\includegraphics[scale=0.15]{../common/university_logo.png}}
 
@@ -174,7 +174,7 @@ Variáveis estimadas:
     \item Perfilador de alta precisão de Condutividade e Temperatura em
           função da profundidade (CTD);
     \item Outros sensores podem ser acoplados como: oxigênio, pH, fluorômetro;
-    \item Taxa de amostragem pode ser ajustada (2 amostras/s até 1 amostra/4min);
+    \item Taxa de amostragem pode ser ajustada (12--48 Hz);
     \item Temperatura: medida por termistor;
     \item Condutividade: por indução;
     \item Pressão: cristal de quartzo.
@@ -229,7 +229,7 @@ Variáveis estimadas:
 \end{frame}
 
 \begin{frame}
-\frametitle{Temperatura média da superfície [\textcelsius{}]}
+\frametitle{Temperatura média em superfície [\textcelsius{}]}
     \begin{center}
         \includegraphics[scale=0.5]{./figures/surface_temperature_woa09.png}
     \end{center}
@@ -258,7 +258,7 @@ Variáveis estimadas:
 \begin{frame}
 \frametitle{Temperatura potencial}
     \begin{center}
-        \includegraphics[scale=0.45]{../figures/potential_temperature.png}
+        \includegraphics[scale=0.5]{./figures/profile_temperature_woa09.png}
     \end{center}
 \end{frame}
 
@@ -277,49 +277,24 @@ Variáveis estimadas:
         de 3,5\% de outros materiais, tais como sais, gases dissolvidos,
         substâncias orgânicas e partículas não solúveis.
     \end{block}
-    \small{
-    \begin{itemize}[<+-| alert@+>]
-    \item O gelo flutua. Isso é importante para a vida em lagos de água doce,
-    já que o gelo atua como um isolante térmico nas perdas adicionais de calor,
-    prevenindo que a água congele totalmente da superfície ao fundo;
-    \item A densidade mostra um decréscimo rápido conforme o ponto de
-    congelamento se aproxima. A expansão resultante durante o congelamento é a
-    maior causa do intemperismo de rochas.
-    \end{itemize}
-    }
 \end{frame}
 
 \begin{frame}
-\frametitle{Água sem Sal!?}
-    \small{
-    \begin{itemize}[<+-| alert@+>]
-    \item O ponto de congelamento diminui sob pressão. Como consequência,
-    derretimento ocorre na base das geleiras, o que facilita o seu deslocamento.
-    \item Pontes de hidrogênio cedem sob pressão, i.e., o gelo sob pressão se
-    torna mais plástico. Como consequência, o gelo terrestre da Antártica e do
-    ártico fluem, e quebrando pedaços na sua porção mais externa que formam os
-    icebergs. Sem esse processo, toda a água das regiões polares eventualmente se
-    tornariam gelo.
-    \end{itemize}
-    }
-\end{frame}
-
-\begin{frame}
-\frametitle{Água com Sal!}
+\frametitle{Água com sal!}
     \small{
     \begin{block}{}
-        A água do mar contem em seu peso 3,5\% sais, gases, substâncias
+        A água do mar contém em seu peso 3,5\% de sais, gases, substâncias
         orgânicas e material particulado.  A presença adicional dos sais
         influencia na maioria das propriedades físicas da água do mar
         (densidade, compressibilidade, ponto de congelamento, temperatura da
-        densidade máxima) em algum grau, mas não são os fatores que os
+        densidade máxima) em algum grau, mas não são os fatores que as
         condicionam.
     \end{block}
 
     \pause
     \begin{block}{}
         Algumas propriedades (viscosidade, absorção de luz) não são
-        significativamente afetada pela salinidade (detalhe: o material
+        significativamente afetadas pela salinidade (detalhe: o material
         dissolvido e particulado afeta a absorção de luz, e de fato, essa
         influência é usada na maioria das aplicações ópticas).
 
@@ -329,27 +304,28 @@ Variáveis estimadas:
     }
 \end{frame}
 
-\begin{frame}
-\frametitle{Água com sal}
-    \small{
-    \begin{itemize}[<+-| alert@+>]
-    \item O ponto de congelamento diminui sob pressão. Como consequência,
-    derretimento ocorre na base das geleiras, o que facilita o seu deslocamento.
-    \item Pontes de hidrogênio cedem sob pressão, i.e., o gelo sob pressão se
-    torna mais plástico. Como consequência, o gelo terrestre da Antártica e do
-    ártico fluem, e quebrando pedaços na sua porção mais externa que formam os
-    icebergs. Sem esse processo, toda a água das regiões polares eventualmente se
-    tornariam gelo.
-    \end{itemize}
-    }
-\end{frame}
+% \begin{frame}
+% \frametitle{Água com sal!}
+%     \small{
+%     \begin{itemize}[<+-| alert@+>]
+%     \item O ponto de congelamento diminui com o aumento da pressão.  Como
+%     consequência, ocorre derretimento na base das geleiras, facilitam o seu
+%     deslocamento.
+%     \item Ligações de hidrogênio quebram com o aumento da pressão, i.e., o gelo
+%     sob pressão se torna mais plástico. Como consequência, o gelo terrestre da
+%     Antártica e do Ártico fluem, quebrando pedaços na sua porção mais externa
+%     que formam os icebergs.  Sem esse processo, toda a água das regiões polares
+%     eventualmente se tornariam gelo.
+%     \end{itemize}
+%     }
+% \end{frame}
 
 \begin{frame}
 \frametitle{Definição de salinidade}
     \small{
     \begin{block}{}
-    Quantidade de matéria dissolvida (expressa em gramas) por quilograma de
-    água do mar.
+    Quantidade de matéria (inorgânica) dissolvida (expressa em gramas) por
+    quilograma de água do mar.
     \end{block}
     }
     \pause
@@ -358,8 +334,6 @@ Variáveis estimadas:
     \item Já foi expressa em partes por mil (\textperthousand) e por UPS
     (unidade prática de salinidade).  O padrão hoje preferido pela UNESCO é
     expressar salinidade sem unidades pois representa massa/massa [{\bf !}].
-    Conceito muito útil pois a constituição da água do mar é varia
-    muito pouco para diferentes regiões do oceano global.
     \end{itemize}
     }
 \end{frame}
@@ -372,7 +346,7 @@ Variáveis estimadas:
     \item Determinar a quantidade de cloro, bromo e iodo para medir a
           clorinidade através de titulação com sulfato de prata (método
           antigo).
-    \item Relação salinidade e clorinidade: S = 1,80655\textcelsius.
+    \item Relação salinidade e clorinidade: S = 0.03 + 1,80655 $\times$ [Cl].
     \item Precisão de 0,025.
     \item Este método foi utilizado até o Ano Internacional Geofísico, 1957.
     \item Medida da condutividade (método moderno).
@@ -396,16 +370,16 @@ Variáveis estimadas:
 \end{frame}
 
 \begin{frame}
-\frametitle{Salinidade global média}
+\frametitle{Salinidade média em superfície [g kg$^{-1}$]}
     \begin{center}
-        \includegraphics[scale=0.4]{../figures/mean_salinity.png}
+        \includegraphics[scale=0.5]{./figures/surface_salinity_woa09.png}
     \end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Salinidade no Atlântico}
     \begin{center}
-        \includegraphics[scale=0.4]{../figures/salinity_atlantic.png}
+        \includegraphics[scale=0.4]{./figures/cross_section_salinity_woa09.png}
     \end{center}
 \end{frame}
 
@@ -438,7 +412,6 @@ Variação no oceano:
                   (variação na massa);
             \item subsidência costeira.
         \end{enumerate}
-    \item Observações de longo--termo na altura refletem variações da:
     \end{itemize}
     }
 \end{frame}
@@ -458,7 +431,7 @@ Variação no oceano:
 \end{frame}
 
 \begin{frame}
-\frametitle{Marégrafos de bóia}
+\frametitle{Marégrafos de boia}
     \begin{columns}
         \begin{column}{0.5\textwidth}
         \small{
@@ -531,7 +504,7 @@ Variação no oceano:
 
     $\rho = 1,025 \times 10^3$ kg m$^{-3}$
 
-    $\rho = 1025 (9,81)z = 1,005525z$[dbar].
+    $\rho = 1025 (9,81)z = 1,005525z$ [dbar].
     \end{block}
 \end{frame}
 
@@ -599,7 +572,7 @@ Variação no oceano:
     \pause
     \footnotesize{
     \begin{itemize}[<+-| alert@+>]
-    \item Unidade: massa/volume (kg/m$^3$)
+    \item Unidade: massa/volume (kg m$^-3$)
     \item Densidade máxima da água pura ocorre a 4\textcelsius, na pressão
           atmosférica:\\
              $\rho$(0, 4\textcelsius, 1 bar) = 1000 kg m$^{-3}$ = 1 g cm$^{-3}$
@@ -651,7 +624,7 @@ Variação no oceano:
     \item Maiores variações na água do mar são causadas pela variação da
           pressão.
     \item Densidade potencial: densidade de uma parcela quando deslocada
-          adiabaticamente a uma pressão de referência: e.g. superfície.
+          adiabaticamente a uma pressão de referência: ex.: superfície.
     \item $\sigma_t = \sigma(S, T, 0)$
     \item Água mais fria é mais compressível que água mais morna.
     \item Portanto, água fria se torna mais densa que água morna quando
@@ -751,7 +724,7 @@ Variação no oceano:
 \begin{frame}
 \frametitle{Aula de reposição...}
   \begin{block}{}
-    Não teremos aula nos dias 23 e 30 de Agosto.
+    ???
   \end{block}
 \end{frame}
 
