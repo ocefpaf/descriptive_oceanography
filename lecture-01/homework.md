@@ -14,8 +14,8 @@ dimensões horizontais/verticais) para o oceanos Pacífico é semelhante a
 uma folha de papel. Quais seriam as consequências disso? Quais
 implicações para a circulação?
 
-<!--Uma largura de 10000 km para 25.4 cm, e a profundidade de 3 km para 0,007 cm,
-a largura típica de uma folha de papel.-->
+*Respota: Uma largura de 10000 km para 25.4 cm, e a profundidade de 3 km para
+0,007 cm, a largura típica de uma folha de papel.*
 
 2) Gota e água doce em uma amostra oceânica
 ===========================================
@@ -28,7 +28,7 @@ Use:
 - 1 gota tem aproximadamente 0,025 mL de água.
 - 35 g/Kg para a salinidade da água do mar.
 
-<!-- \frac{200}{200 + 0,025} \times 35 =  34,996 -->
+*Resposta:* $\frac{200}{200 + 0,025} \times 35 =  34,996$
 
 3) Equipamentos oceanográficos
 ==============================
