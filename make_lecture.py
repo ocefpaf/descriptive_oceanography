@@ -52,6 +52,9 @@ header = r"""% Packages.
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsmath}
 
+% Partial.
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivatives
+
 % Template.
 \setbeamertemplate{blocks}[rounded][shadow=true]
 
