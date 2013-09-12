@@ -80,9 +80,9 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Estatísticas para checar qualidade de dados.}
+\frametitle{Qualidade de dados (QA/QC).}
     \begin{center}
-        \includegraphics[scale=0.7]{../figures/Accuracy_vs_Precision.png}
+        \includegraphics[scale=0.3]{./figures/accuracy_precision.pdf}
     \end{center}
     \footnotesize{Você pode corrigir a {\bf tendência mas não a imprecisão!}}
 \end{frame}
@@ -139,7 +139,8 @@
 \begin{frame}
 \frametitle{Estatísticas para checar qualidade de dados.}
     \begin{center}
-        \includegraphics[scale=0.2]{../figures/anscombes_quartet_3.png}
+        \includegraphics[scale=0.3]{./figures/anscombes_quartet_3.pdf}
+%         http://en.wikipedia.org/wiki/File:Anscombe%27s_quartet_3.svg
     \end{center}
 \end{frame}
 
@@ -179,33 +180,50 @@
 
 \section{TEOS-10}
 \begin{frame}
+\frametitle{Salinidade Referência}
+    \begin{block}{}
+    É a fração de massa de material dissolvido em solução baseado
+    na composição aproximada para Água do Mar Padrão.
+    $\text{S}_\text{R} = (35.16504 / 35) \text{g kg}^{-1} \times \text{S}_\text{P}$
+    \end{block}
+\scriptsize{Millero, Frank J., et al. "The composition of Standard Seawater and the definition of the Reference-Composition Salinity Scale." Deep Sea Research Part I: Oceanographic Research Papers 55.1 (2008): 50-72.}
+\end{frame}
+
+\begin{frame}
 \frametitle{Salinidade Absoluta}
     \begin{itemize}[<+-| alert@+>]
         \item A principal mudança no TEOS-10 quando comparada ao EOS-80
-        \item A adoção da Salinidade Absoluta $S_A$ no lugar da Salinidade
-              Prática $S_p$ (PSS-78).
-        \item Importante ressaltar que a Salinidade Prática deve ser a variável
-              em banco de dados.
-        \item Isso é feito porque a Salinidade Prática é (virtualmente) a
-              variável medida, enquanto a Salinidade Absoluta é calculada.
+        \item A adoção da Salinidade Absoluta $\text{S}_\text{A}$ no lugar da
+              Salinidade Prática $\text{S}_\text{P}$ (PSS-78).
     \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Salinidade Absoluta}
     \begin{block}{}
-        $S_A = \frac{35.16504 \text{g Kg}^{-1}}{35} S_p(1 + R^{\delta})$ onde
-        $(35.16504 \text{g Kg}^{-1}/35) S_p$ é a {\bf Salinidade de Referência}
-        e $R^{\delta}$ é a anomalia da Salinidade.
+        $\text{S}_\text{A} =
+        \text{S}_\text{R} + \delta\text{S}_\text{A}(\phi, \lambda, p)$
+
+        onde $\delta\text{S}_\text{A}$ é a anomalia da Salinidade em função da
+        longitude, latitude e profundidade.
     \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Salinidade Absoluta}
+\frametitle{Salinidade Absoluta -- $\delta\text{S}_\text{A}$}
     \begin{center}
-        \includegraphics[scale=0.4]{../figures/delta_SA.png}
+        \includegraphics[scale=0.5]{./figures/delta_SA.png}
     \end{center}
 \end{frame}
+
+\begin{frame}
+\frametitle{Salinidade Absoluta}
+    \begin{block}{}
+        Muito Importante ressaltar que apenas a Salinidade Prática (SP) deve
+        ser arquivada!
+    \end{block}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Temperatura Conservativa}
@@ -231,17 +249,16 @@
 
 \begin{frame}
 \frametitle{Temperatura Conservativa}
-    \begin{block}{}
-        Muito Importante ressaltar que apenas a temperatura {\it in situ} deve
-        ser arquivada!
-    \end{block}
+    \begin{center}
+        \includegraphics[scale=0.45]{./figures/conservative_temperature.png}
+    \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Temperatura Conservativa}
-    \begin{center}
-        \includegraphics[scale=0.45]{../figures/conservative_temperature.png}
-    \end{center}
+\frametitle{Dever de casa}
+    \begin{block}{}
+        Discussão sobre "Oscilação de Sal vs do Oscilação Campo de Vento."
+    \end{block}
 \end{frame}
 
 \end{document}
