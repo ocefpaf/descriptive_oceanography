@@ -29,8 +29,8 @@
 
 % Exam.
 \addpoints
-% \printanswers
-\noprintanswers
+\printanswers
+% \noprintanswers
 \usepackage{color}
 \definecolor{SolutionColor}{rgb}{0.8,0.9,1}
 \shadedsolutions
@@ -82,7 +82,8 @@ aproximadamente iguais.
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[scale=0.7]{./figures/diagrama_TS.pdf}
+%   \includegraphics[scale=0.7]{./figures/diagrama_TS.pdf}
+  \includegraphics[scale=0.7]{./solution/Diagrama-TS.pdf}
   \label{fig:TS}
   \caption{Diagrama TS}
 \end{figure}
@@ -99,14 +100,16 @@ aproximadamente iguais.
   \end{solution}
 
   \begin{solution}
-    Essa massa d'água é mais densa que as duas que a formaram.  Mostrando a não linearidade da equação de estado.
+    Essa massa d'água é mais densa que as duas que a formaram.  Mostrando a não
+    linearidade da equação de estado.
   \end{solution}
 
   \part[1]
   Usando a forma para a equação de estado:
 
   \begin{equation}
-    \rho = \rho_o - \underbrace{\alpha(T - T_o)}_{a} + \underbrace{\beta(S-S_o)}_b + \underbrace{\kappa p}_c
+    \rho = \rho_o - \underbrace{\alpha(T - T_o)}_{a} +
+           \underbrace{\beta(S-S_o)}_b + \underbrace{\kappa p}_c
     \label{eq:linear}
   \end{equation}
 
@@ -142,9 +145,9 @@ aproximadamente iguais.
   $\pd{\rho}{T} = $
 
   \begin{solution}
-  $\pd{\rho}{S} \equiv \beta\partial S$
+  $\pd{\rho}{S} \equiv \beta \delta S$
 
-  $\pd{\rho}{T} \equiv -\alpha\partial T$
+  $\pd{\rho}{T} \equiv -\alpha \delta T$
   \end{solution}
 
   \part[1]
@@ -158,7 +161,7 @@ aproximadamente iguais.
   \begin{solution}
   $\delta \rho \approx \beta \delta S = 1/0.78 = 1.28$ g/kg
 
-  $\delta \rho \approx -\alpha \delta T = 1/-0.15 = 6.66$\textcelsius
+  $\delta \rho \approx -\alpha \delta T = 1/-0.15 = -6.66$\textcelsius
   \end{solution}
 
   \part[1]
@@ -210,7 +213,7 @@ Propriedades conservativas.
 
  \end{parts}
 
-\question
+\question[2]
 Usando a figura (\ref{fig:termo}), que mostra a variação de temperatura em
 uma região temperada do hemisfério Sul, responda.
 
@@ -222,31 +225,31 @@ uma região temperada do hemisfério Sul, responda.
   \label{fig:termo}
 \end{figure}
 
- \begin{parts}
-  \part[2]
   Observe o painel superior da figura e explique a formação e erosão da
   termoclina sazonal.
 
   \begin{solution}
-  Primavera (Março, Abril, Maio): Com a chegada da primavera o perfil pouco
-  estratificado se torna aos poucos mais estratificado com o aquecimento da
-  superfície começando a formação de uma termoclina sazonal sobre a termoclina
-  permanente.
+  {\bf Primavera (Setembro, Outubro, Novembro):}
 
-  Verão (Junho, Julho, Agosto): No verão a superfície do oceano se encontra
-  estabilizada e o perfil apresenta uma redução da camada de mistura em função
-  do aquecimento.
+  Com a chegada da primavera o perfil pouco estratificado se torna aos poucos
+  mais estratificado com o aquecimento da superfície começando a formação de uma
+  termoclina sazonal sobre a termoclina permanente.
 
-  Outono (Setembro, Outubro, Novembro): O resfriamento das camadas de
-  superfície a camada superior fica instável e a camada de mistura aumenta
-  avançando sobre a termoclina sazonal.
+  {\bf Verão (Dezembro, Janeiro, Fevereiro):}
 
-  Inverno (Dezembro, Janeiro, Fevereiro):  A termoclina sazonal é quase
-  completamente erodida e a camada de mistura encontra com a termoclina
-  permanente.
+  No verão a superfície do oceano se encontra estabilizada e o perfil apresenta
+  uma redução da camada de mistura em função do aquecimento.
+
+  {\bf Outono (Março, Abril, Maio):}
+
+  Com o resfriamento das camadas de superfície a camada superior fica instável
+  e a camada de mistura aumenta avançando sobre a termoclina sazonal.
+
+  {\bf Inverno (Junho, Julho, Agosto):}
+
+  A termoclina sazonal é quase completamente erodida e a camada de mistura
+  se encontra com a termoclina permanente.
   \end{solution}
-
- \end{parts}
 
 \end{questions}
 
