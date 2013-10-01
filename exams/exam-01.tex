@@ -1,0 +1,183 @@
+% Style.
+\documentclass[letterpaper,portuguese,12pt,pdftex]{exam}
+
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage[left=2.5cm,top=3cm,right=2.5cm]{geometry}
+
+% Portuguese.
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{textcomp}
+
+% Font.
+\usepackage{lmodern}
+
+% Figures.
+\usepackage{epsf,epsfig}
+
+% Bibtex and extras.
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[bookmarks=false,colorlinks=true,urlcolor={green},linkcolor={green},pdfstartview={XYZ null null 1.22}]{hyperref}
+
+% Math.
+\usepackage{amssymb,amsmath}
+\usepackage{mathtools}
+\everymath{\displaystyle}
+
+% Exam.
+\addpoints
+% \printanswers
+\noprintanswers
+\usepackage{color}
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+\shadedsolutions
+\renewcommand{\solutiontitle}{\noindent\textbf{Solução:}\par\noindent}
+\pagestyle{headandfoot}
+\footer{}{Página \thepage\ de \numpages}{}
+\boxedpoints
+\pointsinrightmargin
+\pointpoints{ponto}{pontos}
+\hqword{Questão}
+\hpword{Pontos}
+\hsword{Nota}
+% \qformat{\textbf{Question\thequestion}\quad(\thepoints)\hfill}
+
+% User commands.
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+% PDF metadata.
+\pdfinfo{% hyperref overrides this
+  /Title    (Prova 01 -- Oceanografia Física Descritiva)
+  /Author   (Filipe Fernandes)
+  /Creator  (Filipe Fernandes)
+  /Producer (Filipe Fernandes)
+  /Subject  (prova)
+  /Keywords (prova, oceanografia)
+}
+
+% Front page.
+\title{Prova 01 -- Oceanografia Física Descritiva}
+\author{Prof. Filipe Fernandes}
+\date{04-Out-2013}
+
+\begin{document}
+\maketitle
+\doublespacing
+
+\vspace{1cm}
+\hbox to \textwidth{Nome e número de matrícula:\enspace\hrulefill}
+\vspace{1cm}
+
+\begin{minipage}{.8\textwidth}
+Esse exame incluí \numquestions\ questões. O número total de pontos é
+\numpoints.  % 25
+
+A interpretação das questões faz parte da prova.  Qualquer problema com a
+redação das mesmas será resolvido {\bf após} a prova e não durante.
+
+\end{minipage}
+\vspace{0.5cm}
+
+\begin{questions}
+
+  \question
+  \begin{parts}
+  \part[2]
+  Explique como a {\bf densidade} varia com a {\bf pressão}, {\bf temperatura}
+  e {\bf salinidade}.
+
+  \part[2]
+  O que são e como se relacionam: {\bf Densidade ($\rho$)}, {\bf sigma ($\sigma$)},
+  {\bf sigma-t ($\sigma_t$)} e  {\bf sigma-theta ($\sigma_{\theta}$)}.
+
+  \begin{solution}
+    \begin{itemize}
+      \item $\rho = \rho(S, t, p)$
+      \item $\sigma = \rho - 1000$
+      \item $\sigma_t = \sigma_t(S, t, p=0)$
+      \item $\sigma_{\theta} = \sigma_{\theta}(S, \theta, p=0)$
+    \end{itemize}
+  \end{solution}
+
+  \end{parts}
+
+  \question
+
+  \begin{parts}
+  \part[4]
+  Explique porque a {\bf temperatura superficial} nas proximidades do
+  {\bf equador} é ligeiramente mais {\bf fria} que as águas ao seu redor.
+  O mesmo acontece com a {\bf salinidade}? Justifique a sua resposta!
+
+  \begin{solution}
+    Modelo de ressurgência global para t.
+    Chuvas para S.
+  \end{solution}
+
+  \part[4]
+  O que são propriedades {\bf conservativas} e {\bf não-conservativas}?
+  De {\bf 2} exemplos de cada uma e discorra como podemos usar essas
+  propriedades ao nosso favor para {\bf traçar massas d'água}.
+
+  (Ponto extra: Temperatura {\it in-situ} é verdadeiramente conservativa?)
+
+  \begin{solution}
+    TODO
+  \end{solution}
+
+  \part[4]
+  Cite 1 exemplo para cada escala de fenômenos: {\bf pequena},
+  {\bf meso} e {\bf grande-escala} que ocorrem nos oceanos.  Na sua resposta
+  comente sobre como {\bf observar/estudar} cada um dos fenômenos que você
+  escolheu.
+
+  (Exemplo: Estudo de {\bf ressurgência costeira}, fenômeno de {\bf meso-escala},
+  usando seções de {\bf XBTs quinzenais} -- que é a frequência média de passagem
+  de frentes na região Sul/Sudeste da costa Brasileira.)
+
+  \end{parts}
+
+  \question
+  \begin{parts}
+  \part[3]
+  Esquematize {\bf perfis verticais} oceânicos típicos de {\bf temperatura},
+  {\bf salinidade} e {\bf densidade} para regiões sub-tropicais.  Nomeie as
+  {\bf 3 camadas} de estratificação em seu perfil e teça comentários sobre a sua
+  {\bf estabilidade}.
+
+  \begin{solution}
+    O perfil de densidade é quase um espelho da temperatura porque, apesar da
+    densidade variar mais com a salinidade, a variação da temperatura é muito
+    maior.
+  \end{solution}
+
+  \part[2]
+  Explique o que é a {\bf termoclina sazonal}.  Explique a sua {\bf formação} e
+  como essa se diferencia da {\bf termoclina permanente}.
+
+  \begin{solution}
+  \end{solution}
+
+  \end{parts}
+
+
+  \question[4]
+  Comente sobre a {\bf veracidade} de cada afirmação abaixo:
+  \begin{itemize}
+    \item[a)] Em regiões subtropicais nota-se uma tendência para que as
+              temperaturas superficiais da água do mar sejam maiores próximo à
+              costa oeste do que próximo à costa leste dos oceanos.
+    \item[b)] A temperatura potencial da água do mar é, em geral, maior ou igual
+              à temperatura {\it in-situ}.
+    \item[c)] A termoclina sazonal é, em geral, mais profunda durante o verão e
+              mais rasa durante o inverno.
+    \item[d)] A termoclina sazonal é um fenômeno típico da região equatorial dos
+              oceanos.
+  \end{itemize}
+
+\end{questions}
+
+\end{document}
