@@ -86,13 +86,18 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
   \question
   \begin{parts}
   \part[2]
-  Explique como a {\bf densidade} varia com a {\bf pressão}, {\bf temperatura}
-  e {\bf salinidade}.
+  Explique como a {\bf densidade ($\rho$)} varia com a {\bf pressão ($p$)},
+  {\bf temperatura ($t$)} e {\bf salinidade $S$}.
 
   \begin{solution}
     \begin{itemize}
-      \item Pressão: Aumenta quase linearmente com a pressão.
+      \item $p$: Aumenta quase linearmente com o aumento da pressão.
+      \item $P$: Aumenta quase linearmente com o aumento da salinidade.
+      \item $t$: Diminuí não-linearmente com o aumento da temperatura.
     \end{itemize}
+    \begin{center}
+      \includegraphics[scale=0.7]{./solution/densidade.pdf}
+    \end{center}
   \end{solution}
 
   \part[2]
@@ -101,10 +106,14 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
 
   \begin{solution}
     \begin{itemize}
-      \item $\rho = \rho(S, t, p)$
-      \item $\sigma = \rho - 1000$
-      \item $\sigma_t = \sigma_t(S, t, p=0)$
-      \item $\sigma_{\theta} = \sigma_{\theta}(S, \theta, p=0)$
+      \item $\rho = \rho(S, t, p) \rightarrow$ Densidade da água do mar em
+            função da Salinidade, temperatura e pressão.
+      \item $\sigma = \rho - 1000 \rightarrow$ Densidade $\rho$ menos a
+            densidade da água pura.
+      \item $\sigma_t = \sigma_t(S, t, p=0) \rightarrow$ Densidade $\sigma$
+            referenciada na superfície.
+      \item $\sigma_{\theta} = \sigma_{\theta}(S, \theta, p=0) \rightarrow$
+            Densidade $\sigma_t$ calculada com temperatura potencial.
     \end{itemize}
   \end{solution}
 
@@ -119,8 +128,11 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
   O mesmo acontece com a {\bf salinidade}? Justifique a sua resposta!
 
   \begin{solution}
-    Modelo de ressurgência global para t.
-    Chuvas para S.
+    Na superfície das águas no equador as temperaturas são ligeiramente mais
+    frias que as águas ao seu redor devido a ressurgência equatorial.
+
+    Sim, as salinidades nas proximidades do equador são ligeiramente menores,
+    mas devidos às chuvas e não a ressurgência.
   \end{solution}
 
   \part[4]
@@ -131,7 +143,19 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
   (Ponto extra: Temperatura {\it in-situ} é verdadeiramente conservativa?)
 
   \begin{solution}
-    TODO
+    {\bf Propriedade conservativa:} Qualquer propriedade que só se altera por
+    advecção e mistura.  Sem fontes ou sorvedouros.
+
+    Exemplos: Salinidade e temperatura.
+
+    {\bf Propriedade não-conservativa:} Propriedades que são alteradas por
+    fontes ou sorvedouros, além dos processos de advecção e mistura.
+
+    Oxigênio e Nitrogênio.
+
+    {\bf Ponto-extra:} Não, a temperatura {\it in-situ} é modificada pela
+    pressão, a temperatura verdadeiramente conservativa é a potencial (ou a
+    nova Temperatura Conservativa ``CT'' do TEOS-10).
   \end{solution}
 
   \part[4]
@@ -144,6 +168,21 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
   usando seções de {\bf XBTs quinzenais} -- que é a frequência média de passagem
   de frentes na região Sul/Sudeste da costa Brasileira.)
 
+  \begin{solution}
+    \begin{itemize}
+      \item {\bf Pequena Escala:} Ondas superficiais, boia-ondôgrafos.
+            Mistura pelo vento, ADCP. Espalhamento de uma Pluma de rio, imagens
+            de satélite.
+      \item {\bf Meso-Escala:} Vórtices e meandros da corrente do Brasil,
+            cruzeiros oceanográficos.  Confluência Brasil-Malvinas, Modelagem
+            numérica.  Bloom de algas tóxicas, imagens de satélite + amostras de
+            água coletadas concomitantemente de navio.
+      \item {\bf Grande Escala:}  Célula de revolvimento meridional, modelos
+            numéricos + observações climatológicas.  ENSO, sequencia de boias ao
+            longo do Pacífico Equatorial.  Vazamento de águas das Agulhas para o
+            Atlântico, sequencia de fundeios.
+    \end{itemize}
+  \end{solution}
   \end{parts}
 
   \question
@@ -155,9 +194,16 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
   {\bf estabilidade}.
 
   \begin{solution}
-    O perfil de densidade é quase um espelho da temperatura porque, apesar da
-    densidade variar mais com a salinidade, a variação da temperatura é muito
-    maior.
+  A temperatura decresce com a profundidade, enquanto a salinidade atinge seu
+  mínimo em $\sim 800$ m.  O perfil de densidade é quase um espelho da
+  temperatura porque, apesar da densidade variar mais com a salinidade, a
+  variação da temperatura é muito maior.
+
+  A camada de mistura tem estabilidade neutra, enquanto a profunda é entre
+  neutra à pouco estável.  Já a termo-/picno-/halo-clina é altamente estável.
+    \begin{center}
+      \includegraphics[scale=0.45]{./solution/profiles.pdf}
+    \end{center}
   \end{solution}
 
   \part[2]
@@ -165,6 +211,12 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
   como essa se diferencia da {\bf termoclina permanente}.
 
   \begin{solution}
+  Termoclina sazonal é uma {\bf feição temporária} que aparece logo acima da
+  {\bf termoclina permanente}.  É criada devido à {\bf mudança de temperatura}
+  ao longo das {\bf estações} do ano em regiões {\bf subtropicais}.  As regiões
+  polares também podem apresentar uma termoclina sazonal, porém mais modesta e
+  com apenas 2 modos (inverno e verão) ao invés de 4 (outono, inverno, primavera
+  e verão).
   \end{solution}
 
   \end{parts}
@@ -183,6 +235,21 @@ redação das mesmas será resolvido {\bf após} a prova e não durante.
     \item[d)] A termoclina sazonal é um fenômeno típico da região equatorial dos
               oceanos.
   \end{itemize}
+
+  \begin{solution}
+    \begin{itemize}
+      \item[a)] {\bf Verdadeiro}, as correntes de contorno Oeste são responsáveis por
+                Essa assimetria.
+      \item[b)] {\bf Falso} A temperatura potencial da água do mar é, em geral,
+                {\bf menor} ou igual à temperatura {\it in-situ}.
+      \item[c)] {\bf Falso} A termoclina sazonal é, em geral, {\bf mais rasa} na
+                primavera/verão (quando é criada pelo aquecimento) e mais
+                {\bf profunda} durante o outono/inverno, quando é erodida.
+      \item[d)] {\bf Falso} A termoclina sazonal é um fenômeno típico da região
+                {\bf subtropical} dos oceanos.
+    \end{itemize}
+
+  \end{solution}
 
 \end{questions}
 
