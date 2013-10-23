@@ -1,9 +1,9 @@
 % Title page.
-\title[Aula 09]{Leis de conservação}
-\subtitle{Correntes oceânicas}
+\title[Aula 09]{Correntes oceânicas}
+\subtitle{Coriolis, circulação gerada pelo vento e circulação termohalina}
 \author[Filipe Fernandes]{Filipe P. A. Fernandes}
 \institute[unimonte]{Centro Universitário Monte Serrat}
-\date[Novembro 2012]{05 de Novembro 2012}
+\date[Outubro 2013]{25 de Outubro 2013}
 
 \logo{\includegraphics[scale=0.15]{../common/university_logo.png}}
 
@@ -19,240 +19,203 @@
 \tableofcontents
 \end{frame}
 
-\section{Leis de conservação.}
-
-\subsection{Conservação de massa}
+\section{Coriolis}
 \begin{frame}
-\frametitle{Conservação de massa}
-{\small
-  \begin{itemize}[<+-| alert@+>]
-    \item A lei de conservação da massa é utilizada em Oceanografia em diversas
-          situações;
-    \item Por exemplo, para um canal, esta lei exige que a massa de água que
-          passa pela entrada menos a massa que passa pela saída do canal seja
-          igual à variação da massa de água no interior do canal (normalmente
-          indicada pela variação do nível da superfície da água).
-    \item E no meio oceânico como um todo, a massa de água advinda de
-          precipitações de chuva e neve mais a recebida por rios e derretimento
-          de gelo é aproximadamente igual à massa de água perdida por
-          evaporação mais a que congela.
-  \end{itemize}
-}
-\end{frame}
-
-\subsection{Ciclo hidrológico}
-
-\subsection{Conservação do volume}
-\begin{frame}
-\frametitle{Conservação do volume}
-  \begin{itemize}[<+-| alert@+>]
-    \item Princípio da conservação do volume (ou equação da continuidade):
-    \item Consequência do fato da compressibilidade da água ser pequena.
-  \end{itemize}
-  \begin{block}{}
-  \[
-    V_i + R + P = V_o + E
-  \]
-  \[
-    Vo - V_i = R + P - E
-  \]
-  \end{block}
+  \frametitle{Quem tem medo da rotação da Terra desce agora!}
+  \begin{center}
+    \includegraphics[scale=0.6]{./figures/calvin_rotation.png}
+  \end{center}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Equação da continuidade}
-\[
-  \nabla_h . \mathbf{u} + \pd{w}{z} = 0
-\]
-
-ou,
-
-\[
-  \pd{u}{x} + \pd{v}{y} + \pd{w}{z} = 0
-\]
+  \frametitle{Mas será que ela gira mesmo?}
+  \begin{center}
+    \includegraphics[scale=0.4]{./figures/galileo_goes_to_jail.jpg}
+  \end{center}
 \end{frame}
 
 
-\subsection{Conservação do sal}
 \begin{frame}
-\frametitle{Conservação de salinidade}
-\[
-  \pd{S}{t} + (\mathbf{u} . \nabla_h)S + w\pd{S}{z} = \pd{}{z}\left( K_H\pd{S}{z} \right) + F_S
-\]
-
-ou (modelo de caixa),
-\begin{block}{}
-\[
-  V_iS_i = V_oS_o
-\]
-\end{block}
+  \frametitle{Trilha estelar 01}
+  \begin{center}
+    \includegraphics[scale=0.45]{./figures/NCPtreeLosada.jpg}
+%     http://apod.nasa.gov/apod/ap131023.html
+  \end{center}
+% North Celestial Pole at the center of all the star trail arcs recorded over a
+% period of nearly 2 hours as a series of 30 second long, consecutive exposures
+% on the night of October 5 near Almaden de la Plata, province of Seville, in
+% southern Spain. The axis of rotation leads to the center of the concentric
+% arcs in the night sky. For northern hemisphere the bright star Polaris is very
+% close to the North Celestial Pole and so makes the short bright trail in the
+% central gap between the leafy branches.
 \end{frame}
 
 
-\subsection{Conservação de calor}
 \begin{frame}
-  \frametitle{Conservação de calor}
-  \begin{itemize}[<+-| alert@+>]
-  \item A temperatura das águas oceânicas varia no espaço e no tempo.
-  \item Esta variação depende dos fluxos de calor que entram e saem em cada
-        corpo d'água, e o cálculo desses fluxos se denomina "balanço térmico".
-  \item Esses fluxos de radiação normalmente são denotados pela letra Q,
-        com índices identificando cada componente do balanço térmico.
-  \item Símbolo Q: fluxo: calor por unidade de tempo por unidade de área
-  \end{itemize}
+  \frametitle{Trilha estelar 02}
+  \begin{center}
+    \includegraphics[scale=0.45]{./figures/2007_09_14-orion-lq_vangorp1200.jpg}
+  \end{center}
+% Made on September 14 from Montlaux, France, this wide-angle view nicely shows
+% the stars near the celestial equator tracing nearly straight lines in
+% projection, while stars north and south of the equator, respectively, appear
+% to circle the north and south celestial poles. Featured are the stars of Orion
+% (right of center), brilliant Venus rising (left) as bright star Sirius rises
+% in the south (bottom center), and a polar orbiting Iridium satellite (upper
+% left).  This picture was constructed from 477 consecutive 30 second digital
+% exposures recorded over 4.3 hours.
 \end{frame}
 
-\begin{frame}
-\frametitle{Conservação de temperatura}
-\[
-  \pd{\theta}{t} + (\mathbf{u} . \nabla_h)\theta + w\pd{\theta}{z} = \pd{}{z}\left( K_H\pd{\theta}{z} \right) + F_{\theta}
-\]
-\end{frame}
 
 \begin{frame}
-  \frametitle{Conservação de calor}
-  \begin{itemize}[<+-| alert@+>]
-  \item $Q_S \rightarrow$ Radiação de onda curta (solar incidente);
-  \item $Q_B \rightarrow$ Radiação de onda longa (emitida pelo oceano e
-                          refletida por nuvens);
-  \item $Q_H \rightarrow$ Calor por condução (Sensível);
-  \item $Q_E \rightarrow$ Calor por evaporação/condensação (Latente);
-  \item $Q_V \rightarrow$ Calor por advecção.
-  \end{itemize}
+  \frametitle{Trilha estelar 03}
+  \begin{center}
+%     http://apod.nasa.gov/apod/ap040708.html
+    \includegraphics[scale=4]{./figures/040523cruxa_seip_full.jpg}
+% Gradually change the focus of the camera lens during the exposure, and you
+% could end up with a dramatic picture like this one where the out-of-focus
+% portion of the trail shows off the star's color.  Crux, the Southern Cross.
+% Gacrux or gamma Crucis is the bright red giant star only 88 light-years
+% distant that forms the top of the Cross seen here near top center. Acrux, the
+% hot blue star at the bottom of the Cross is about 320 light-years distant.
+% Actually a binary star system, Acrux is the alpha star of the compact Southern
+% Cross and lies along a line pointing from Gacrux to the South Celestial Pole,
+% off the lower right edge of the picture. Adding a separate short exposure to
+% the end of the step-focussed trails to better show the positions of the stars
+% themselves. The dark night skies above Namibia.
+  \end{center}
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{Conservação de calor}
-  \begin{block}{}
+  \frametitle{A Terra não gira apenas no próprio eixo}
+  \begin{center}
+    \includegraphics[scale=0.35]{./figures/image_0303_analemma0600ut_ayiomamitis_full.jpg}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{E o eixo não está onde gostaríamos...}
+  \begin{center}
+    \includegraphics[scale=0.7]{./figures/AxialTiltObliquity.png}
+%     http://upload.wikimedia.org/wikipedia/commons/6/61/AxialTiltObliquity.png
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Formulando tudo isso}
+  \begin{block}{Velocidades}
     \[
-      Q_{net} = Q_S + Q_V + Q_B + Q_H + Q_E + Q_T
+      \vec{u_{\mathbf{f}}} = \vec{u_{\mathbf{r}}} + \vec{\Omega} \times \vec{r}
+    \]
+  \end{block}
+
+  \begin{block}{Acelerações}
+    \[
+      \vec{a_{\mathbf{f}}} = \vec{a_{\mathbf{r}}} + 2 \vec{\Omega} \times
+      \vec{u_{\mathbf{r}}} - \Omega^2\vec{R}
     \]
   \end{block}
 \end{frame}
 
-\section{Teoria da radiação eletromagnética}
-\begin{frame}
-  \frametitle{Teoria da radiação eletromagnética}
-  Lei de Stefan diz que um corpo com temperatura $T$ emite radiação  segundo:
-  \begin{block}{}
-    \[
-      Q \sim \sigma T^4
-    \]
-  \end{block}
-  onde, $\sigma \approx 5.7338$ J m$^{-2}$\textdegree{K}$^{-4}$s$^{-1}$
-\end{frame}
 
-\subsection{Radiação de ondas curtas}
 \begin{frame}
-  \frametitle{Ondas curtas}
-  \begin{itemize}[<+-| alert@+>]
-    \item 48\% atinge o mar, dos quais
-    \item 29\% é radiação direta (do sol)
-    \item 19\% é radiação indireta (após espalhamento na atmosfera)
-  \end{itemize}
+  \frametitle{Só nos interessa a componente vertical}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item $\Omega_x = 0$
+        \item $\Omega_y = \Omega\cos\theta$
+        \item $\Omega_z = \Omega\sin\theta$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[scale=0.4]{./figures/coriolis_vertical.png}
+      \end{center}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Fatore que afetam $Q_S$}
-  \begin{itemize}[<+-| alert@+>]
-    \item Duração do dia (depende da estação do ano e da latitude).
-    \item Elevação do sol (Densidade de energia é proporcional ao seno do
-          ângulo de elevação do sol).
-    \item Absorção na atmosfera (devido a moléculas de gás, poeira , vapor
-          d'água, ...)
-    \item Efeito de nuvens: que diminui a radiação direta e daí a total,
-          embora aumente a radiação indireta.
-    \item Efeito de ondas na superfície do mar. (que modificam os ângulos de
-          incidência dos raios de sol).
-  \end{itemize}
-\end{frame}
-
-\subsection{Radiação de ondas longas}
-\begin{frame}
-  \frametitle{Ondas longas}
-  \begin{block}{}
-    $Q_B$ proporcional à temperatura absoluta da superfície elevado à
-          quarta potência.
-  \end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Fatores que influenciam $Q_B$}
-  {\footnotesize
-  \begin{itemize}[<+-| alert@+>]
-    \item Espessura das nuvens. Quanto maior a espessura da nuvem, menos é o
-          calor que escapa para o espaço.
-    \item A altura das nuvens, o que determina a temperatura em que a nuvem
-          irradia calor de volta ao oceano. Nuvens altas são mais frias do que
-          as nuvens baixas.
-    \item Quantidade de vapor atmosférico (quanto mais úmido, menor a quantidade
-          de calor que escapa para o espaço).
-    \item Temperatura da água (quanto maior a temperatura maior a radiação).
-    \item Cobertura de gelo e neve. O gelo emite como um corpo negro, mas esfria
-          muito mais rápido do que as áreas de oceano aberto.  Mares cobertos de
-          gelo são isolados da atmosfera.
-  \end{itemize}
-}
-\end{frame}
-
-\subsection{Evaporação}
-\begin{frame}
-  \frametitle{Fatores que influenciam $Q_E$}
+  \frametitle{De onde chegamos a $f = 2\Omega\sin{\theta}$?}
+  \[
+    2\vec{\Omega} \times \vec{u} =
+    \begin{vmatrix}
+    \vec{i} & \vec{j}           & \vec{k}\\
+    0       & 2\Omega\cos\theta & 2\Omega\sin\theta\\
+    u       & v                 & w
+    \end{vmatrix}
+  \]
+  \pause
+  \[
+    2\vec{\Omega} \times \vec{u} =
+    2\Omega [\xcancel{\vec{i}(w\cos\theta} - v\sin\theta) +
+             \vec{j}u\sin\theta - \vec{k}u\cos\theta]
+  \]
+  \pause
   \begin{itemize}
-    \item Vento (aumento do vento aumenta a evaporação).
-    \item Umidade relativa do ar (ar seco aumenta a evaporação).
+    \item $(2\vec{\Omega} \times \vec{u})_x = -(2\Omega\sin\theta)v = -fv$
+    \item $(2\vec{\Omega} \times \vec{u})_y = (2\Omega\sin\theta)u = fu$
+    \item $(2\vec{\Omega} \times \vec{u})_z = \cancelto{*}{-(2\Omega\cos\theta)u}$
   \end{itemize}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Evaporação}
-  \begin{block}{}
-    Evaporação é muito importante, mas difícil de determinar diretamente.
-    Implica em perda de volume d'água e de calor.
-  \end{block}
-\end{frame}
 
-\subsection{Condução de calor}
 \begin{frame}
-  \frametitle{Condução}
-  \begin{block}{}
-    Altamente dependente da diferença de temperatura entre o oceano e a atmosfera.
-  \end{block}
-
+  \frametitle{23 horas, 56 minutos, 4.0916 segundos}
+  \begin{itemize}[<+-| alert@+>]
+    \item $\Omega = \dfrac{2\pi} {24 \times 60 \times 60} =
+           7,272 \times 10^{-5}$ rad s$^{-1}$
+    \item $\Omega^* = \dfrac{2\pi + 2\pi/360} {24 \times 60 \times 60} =
+           7,292 \times 10^{-5}$ rad s$^{-1}$
+  \end{itemize}
+  \pause
+  \small{* Esse é o $\Omega$ que devemos usar incluindo a rotação da Terra ao
+         redor do Sol.  Existem outros efeitos menores como o Movimento do
+         Sistema Solar na Galáxia e o Movimento de Galáxia no Universo.}
 \end{frame}
 
 \begin{frame}
-  \frametitle{$Q_{net}$}
-  \begin{center}
-    \includegraphics[scale=0.38]{../figures/convex_narr_fluxes.png}
-  \end{center}
+  \frametitle{Alguns números}
+  \begin{itemize}[<+-| alert@+>]
+    \item $\Omega = 7,292 \times 10^{-5}$ rad s$^{-1}$
+    \item Máxima aceleração de Coriolis (nos polos):
+
+        $2\Omega \text{v} \sim 1,5 \times 10^{-4}\text{v}$
+
+        v = 10000 m s$^{-1}  \rightarrow 1,5$ m s$^{-1}$
+    \item $\dfrac{d\Omega}{dt} = 0$
+  \end{itemize}
 \end{frame}
 
 
 \begin{frame}
-  \frametitle{Distribuição meridional}
-  \begin{center}
-    \includegraphics[scale=0.48]{../figures/Qnet.png}
-  \end{center}
+  \frametitle{Onde foi parar $\Omega^2\vec{R}$?}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \small{
+      Aceleração centrípeta no equador:
+      $\Omega^2\text{R}_{\text{e}}^{*} = 0,0338$ m s$^{-2}$
+
+      R$_{\text{equador}} -$ R$_{\text{polo}} \approx 21,4 \times 10^{3}$ m
+
+      g$_{\text{equador}} -$ g$_{\text{polo}} \approx -0,052$ m s$^{-2}$
+      }
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[scale=0.6]{./figures/gravity_centrigugal_vectors.png}
+      \end{center}
+    \end{column}
+  \end{columns}
 \end{frame}
 
-
-\subsection{Razão de Bowen}
-\begin{frame}
-  \frametitle{Razão de Bowen}
-  \begin{block}{}
-    \[
-      R = \frac{Q_H}{Q_E}
-    \]
-
-    \[
-      R = 0.062 \frac{(t_s - t_a)}{e_s - e_a}
-    \]
-  \end{block}
-\end{frame}
-
-\section{Correntes Oceânicas}
+\section{Circulação circulação gerada pelo vento}
 \begin{frame}
 \frametitle{Correntes Oceânicas}
   \begin{itemize}[<+-| alert@+>]
@@ -283,8 +246,7 @@ ou (modelo de caixa),
     \item {\bf Circulação gerada pela vento (0-1000 m):}
     \item Associada ao padrões de distribuição de ventos globais que formam os
           giros oceânicos em escalas de bacias;
-    \item Processos desde variação sazonal até escalas climáticas;
-    \item Escala de bacias.
+    \item Processos desde variação sazonal até escalas climáticas (bacias).
    \end{itemize}
 \end{frame}
 
@@ -292,22 +254,89 @@ ou (modelo de caixa),
 \begin{frame}
 \frametitle{Como são geradas}
   \begin{itemize}[<+-| alert@+>]
-    \item {\bf Circulação termo-halina (todo o oceano):}
+    \item {\bf Circulação termohalina (todo o oceano):}
     \item Processos relacionados as trocas de calor (aquecimento, resfriamento)
           e ou água doce (evaporação, precipitação).
-    \item Processos em escalas climáticas;
-    \item Escala global.
+    \item Processos em escalas climáticas (global).
    \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Circulação da superfície dos oceanos}
+  \begin{center}
+    \includegraphics[scale=0.5]{./figures/surface_circulation.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Padrão de circulação de vento {\bf sem} rotação}
+  \begin{center}
+    \includegraphics[scale=0.55]{./figures/no_coriolis_winds.png}
+  \end{center}
+\end{frame}
 
 
-% \begin{frame}
-%   \frametitle{Dever de casa}
-%   \pause
-%   \begin{block}{}
-%     Estudar para a prova!
-%   \end{block}
-% \end{frame}
+\begin{frame}
+  \frametitle{Padrão de circulação de vento {\bf com} rotação}
+  \begin{center}
+    \includegraphics[scale=0.4]{./figures/coriolis_winds.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Ekman}
+  \begin{center}
+    \includegraphics[scale=0.6]{./figures/ekman_spiral.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Circulação Geostrófica}
+  \begin{center}
+    \includegraphics[scale=0.6]{./figures/water_mound.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Circulação Geostrófica}
+  \begin{center}
+    \includegraphics[scale=0.5]{./figures/geos_current.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Intensificação de Correntes de Contorno Oeste}
+  \begin{center}
+    \includegraphics[scale=0.5]{./figures/western_intensification.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Circulação da superfície dos oceanos}
+  \begin{center}
+    \includegraphics[scale=0.5]{./figures/surface_circulation.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Dever de casa}
+  \begin{center}
+    \includegraphics[scale=0.55]{./figures/ocean_description.png}
+  \end{center}
+
+\scriptsize{
+
+\href{http://www.britishpathe.com/video/gambling-with-gulf-stream-aka-gambling-on-the-gulf}{Corrente do Golfo: \url{http://www.britishpathe.com/video/gambling-with-gulf-stream-aka-gambling-on-the-gulf}}
+
+\href{http://esminfo.prenhall.com/science/geoanimations/animations/26_NinoNina.html}{ENSO: \url{http://esminfo.prenhall.com/science/geoanimations/animations/26_NinoNina.html}}
+
+}
+\end{frame}
 
 \end{document}
