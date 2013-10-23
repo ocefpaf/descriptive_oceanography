@@ -1,0 +1,277 @@
+% Title page.
+\title[Aula 10]{Correntes oceânicas}
+% \subtitle{}
+\author[Filipe Fernandes]{Filipe P. A. Fernandes}
+\institute[unimonte]{Centro Universitário Monte Serrat}
+\date[Novembro 2012]{26 de Novembro 2012}
+
+\logo{\includegraphics[scale=0.15]{../common/university_logo.png}}
+
+\begin{document}
+
+% The title page frame.
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{Outline}
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\section{Correntes Oceânicas}
+\begin{frame}
+\frametitle{Correntes Oceânicas}
+\small{
+  \begin{itemize}[<+-| alert@+>]
+    \item A circulação oceânica é o resultado de um balanço de forças
+          (pelo menos 2).
+    \item A dinâmica de fluidos mostra que de acordo com a região de
+          estudo, ocorre um determinado tipo de balanço.
+    \item As forças de atrito só são importantes nos limites dos
+          oceanos (atmosfera e contornos).
+    \item Na região mais interior do oceano e abaixo da camada
+          superficial, a força de atrito, quando comparada com a força
+          do gradiente de pressão (devido à variações horizontais no
+          campo de densidade), pode ser desprezada.
+  \end{itemize}
+  }
+\end{frame}
+
+\subsection{O efeito de Coriolis}
+\begin{frame}
+ \frametitle{Coriolis}
+ \begin{block}{}
+  HN: Deflete para a direita.
+
+  HS: Deflete para a esquerda.
+ \end{block}
+  \href{http://www.physics.orst.edu/~mcintyre/coriolis/East_GIF.html}{Lest}
+
+  \href{http://www.physics.orst.edu/~mcintyre/coriolis/North_Lon_GIF.html}{Norte}
+
+  \href{http://www.physics.orst.edu/~mcintyre/coriolis/North_Pole_GIF.html}{Pólo}
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Força de Coriolis}
+ \small{
+ \begin{itemize}[<+-| alert@+>]
+  \item É proporcional a magnitude da velocidade do
+        fluxo.
+  \item É direcionada perpendicularmente ao fluxo.
+  \item Age defletindo o fluxo para a esquerda no HS e para a direita
+        no HN.
+  \item É máxima nos polos e nulo na região equatorial.
+  \item \( f = 2\Omega\sin(\theta) \), \( \Omega = \frac{2\pi}{T_S} \)
+        onde:
+  \item $\Omega = 7,29 \times 10^{-5}$ s${-1}$ é a velocidade angular da Terra.
+  \item $\theta$ é a latitude.
+  \item $T_S = 86164,09$ s (23 h 56 m 4.1 s) é o dia sideral.
+ \end{itemize}
+ }
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Coriolis}
+ \begin{block}{}
+    Se a Terra fosse cilíndrica haveria força de Coriolis?
+ \end{block}
+  \pause
+ \begin{block}{}
+  (a) Um míssil é disparado do equador em direção ao sul.  Explique o
+  que aconteceria com a sua trajetória em relação a Terra.
+
+  (b) Em que direção uma corrente seria defletida pela força de
+  Coriolis se ela fluísse inicialmente para (i) leste a
+  45\textdegree{N} e (ii) oeste no equador?
+ \end{block}
+  \href{http://www.youtube.com/watch?v=1PWjOMrPkrI}{Vídeo}
+\end{frame}
+
+\begin{frame}
+\frametitle{Correntes Oceânicas}
+  \begin{block}{}
+    A força do gradiente de pressão, no entanto, não é a única força
+    que ocorre nesta região no interior dos oceanos.
+  \end{block}
+  \pause
+  \begin{block}{}
+    Como os movimentos nos oceanos são lentos, a rotação da Terra passa
+    a ser relevante e influencia os movimentos através de uma força
+    aparente, denominada de força de Coriolis.
+  \end{block}
+\end{frame}
+
+\subsection{Revisão de Ekman}
+\begin{frame}
+\frametitle{Revisão de Ekman}
+\small{
+ \begin{block}{}
+  As correntes geradas pelo vento não afetam apenas a camada de Ekman,
+  uma vez que os transportes na camada de Ekman também atuam como um
+  importante mecanismo gerador de fluxo para as camadas profundas,
+  através do bombeamento de Ekman.
+ \end{block}
+\pause
+\begin{block}{}
+  Existem algumas regiões do globo onde o transporte na camada de Ekman é convergente e outras onde ele é divergente. Isto induz movimentos verticais abaixo da camada de Ekman, que atuam para repor ou remover as massas de água associadas.
+\end{block}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Revisão de Ekman}
+ \begin{block}{}
+ \[ w = \frac{1}{f\rho} \left( \pd{\tau^y}{x} - \pd{\tau^x}{y} \right)\]
+  \vspace{1cm}
+ $w \uparrow$ sucção de Ekman (ressurgência).
+
+ $w \downarrow$ bombeamento de Ekman (subsidência).
+ \end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Revisão de Ekman}
+  \begin{center}
+    \includegraphics[scale=0.34]{../figures/ekman_bombeamento.png}
+  \end{center}
+\end{frame}
+
+
+\subsection{Balanço Geostrófico}
+\begin{frame}
+  \frametitle{Balanço Geostrófico}
+  \begin{itemize}[<+-| alert@+>]
+    \item Ocorre amplamente no interior do oceano e da atmosfera;
+    \item É representado pelo equilíbrio entre a Força do Gradiente de Pressão
+          e a Força de Coriolis;
+    \item É um equilíbrio estacionário;
+    \item A pressão em um ponto no interior do oceano é função do peso de água
+          acima deste, que é função da densidade $\rho(S, T, P)$ e da altura da
+          coluna d'água.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Balanço Geostrófico}
+  \small{
+  \begin{block}{Conservação do momento completa}
+    \[
+       \pd{\mathbf{u}}{t} + (\mathbf{u}.\nabla_h)\mathbf{u} +
+       w\pd{\mathbf{u}}{z} + \mathbf{k} \times f\mathbf{u} = -
+       \frac{1}{\rho_o}\nabla_hp + \pd{}{z}\left(K_M\pd{\mathbf{u}}{z}\right) +
+       \mathbf{F}
+    \]
+  \end{block}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Balanço Geostrófico}
+  \begin{block}{Força de Coriolis -- Força Gradiente de Pressão}
+    \hspace{1cm} \( fu = -\frac{1}{\rho}\pd{p}{y} \), \hspace{0.5cm} \( fv = -\frac{1}{\rho}\pd{p}{x} \)
+  \end{block}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Altura dinâmica}
+ \begin{block}{}
+   Uma quantidade muito usada em oceanografia é a altura dinâmica
+   (dimensão m$^2$s$^{-2}$), que a altura estérica escalonada pela
+   aceleração da gravidade.  A altura estérica (dimensão de
+   comprimento), entretanto,  fornece uma medida comparável com
+   comprimento e a sua distribuição espacial pode ser interpretada como
+   o formato da superfície dos oceanos.
+ \end{block}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Altura dinâmica}
+ \begin{block}{}
+  \(D(p_1, p_2) = \int^{p_1}_{p_1}\delta(S, T, P)dp\)
+  \hspace{1cm} \( \left[\frac{\text{m}^3}{\text{kg}} \frac{\text{kg m s}^{-2}}{\text{m}^2}\right]\)
+ \end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Altura dinâmica}
+  \begin{center}
+    \includegraphics[scale=0.24]{../figures/dynamic_height.png}
+  \end{center}
+\end{frame}
+
+
+\subsection{Circulação Termohalina}
+\begin{frame}
+  \frametitle{Circulação Termohalina}
+ \begin{itemize}[<+-| alert@+>]
+  \item Distribuição de T/S nos oceanos.
+  \item Circulação termohalina geral.
+  \item Correntes de contorno oeste profundas.
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Conveyor belt}
+  \begin{center}
+    \includegraphics[scale=0.40]{../figures/thermohaline_circulation.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Formação de água de fundo}
+  \begin{itemize}[<+-| alert@+>]
+    \item T/S das águas superficiais são determinadas por
+          resfriamento/aquecimento e evaporação/precipitação.
+    \item Uma vez isolados da superfície, T/S são conservados.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Formação de água de fundo}
+  \begin{center}
+    \includegraphics[scale=0.45]{../figures/deep_water_formation.png}
+  \end{center}
+\end{frame}
+
+
+\subsection{Sumário}
+\begin{frame}
+\frametitle{Sumário}
+  \begin{itemize}[<+-| alert@+>]
+    \item A circulação gerada pelo vento (principalmente associada aos giros
+          subtropicais), apresenta uma forte simetria entre o HN e HS.
+    \item A circulação envolvendo os 1000 m do oceano é mais rápida, ocorre em
+          escalas de bacias e medidas diretas podem ser usadas para a sua
+          avaliação.
+    \item A circulação termohalina é lenta, ocorre em escala global e é
+          geralmente estudada através do conceito de massas de água.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Correntes}
+  \begin{center}
+    \includegraphics[scale=1.2]{../figures/currents_cartoon.png}
+  \end{center}
+  \href{http://www.youtube.com/watch?v=BtCwjfU2Rro}{Vídeo}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Dever de casa}
+  \pause
+    Dúvidas?
+\end{frame}
+
+\end{document}
