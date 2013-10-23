@@ -1,0 +1,555 @@
+% % Title page.
+% \title[Aula 10]{Correntes oceânicas}
+% \section{Circulação termohalina}
+% \subsection{Leis de conservação}
+% \subsubsection{Conservação de massa}
+% \begin{frame}
+% \frametitle{Conservação de massa}
+% {\small
+%   \begin{itemize}[<+-| alert@+>]
+%     \item A lei de conservação da massa é utilizada em Oceanografia em diversas
+%           situações;
+%     \item Por exemplo, para um canal, esta lei exige que a massa de água que
+%           passa pela entrada menos a massa que passa pela saída do canal seja
+%           igual à variação da massa de água no interior do canal (normalmente
+%           indicada pela variação do nível da superfície da água).
+%     \item E no meio oceânico como um todo, a massa de água advinda de
+%           precipitações de chuva e neve mais a recebida por rios e derretimento
+%           de gelo é aproximadamente igual à massa de água perdida por
+%           evaporação mais a que congela.
+%   \end{itemize}
+% }
+% \end{frame}
+%
+% \subsubsection{Ciclo hidrológico/Conservação do volume}
+% \begin{frame}
+% \frametitle{Conservação do volume}
+%   \begin{itemize}[<+-| alert@+>]
+%     \item Princípio da conservação do volume (ou equação da continuidade):
+%     \item Consequência do fato da compressibilidade da água ser pequena.
+%   \end{itemize}
+%   \begin{block}{}
+%   \[
+%     V_i + R + P = V_o + E
+%   \]
+%   \[
+%     Vo - V_i = R + P - E
+%   \]
+%   \end{block}
+% \end{frame}
+%
+%
+% \begin{frame}
+% \frametitle{Equação da continuidade}
+% \[
+%   \nabla_h . \mathbf{u} + \pd{w}{z} = 0
+% \]
+%
+% ou,
+%
+% \[
+%   \pd{u}{x} + \pd{v}{y} + \pd{w}{z} = 0
+% \]
+% \end{frame}
+%
+%
+% \subsubsection{Conservação do sal}
+% \begin{frame}
+% \frametitle{Conservação de salinidade}
+% \[
+%   \pd{S}{t} + (\mathbf{u} . \nabla_h)S + w\pd{S}{z} = \pd{}{z}\left( K_H\pd{S}{z} \right) + F_S
+% \]
+%
+% ou (modelo de caixa),
+% \begin{block}{}
+% \[
+%   V_iS_i = V_oS_o
+% \]
+% \end{block}
+% \end{frame}
+%
+%
+% \subsubsection{Conservação de calor}
+% \begin{frame}
+%   \frametitle{Conservação de calor}
+%   \begin{itemize}[<+-| alert@+>]
+%   \item A temperatura das águas oceânicas varia no espaço e no tempo.
+%   \item Esta variação depende dos fluxos de calor que entram e saem em cada
+%         corpo d'água, e o cálculo desses fluxos se denomina "balanço térmico".
+%   \item Esses fluxos de radiação normalmente são denotados pela letra Q,
+%         com índices identificando cada componente do balanço térmico.
+%   \item Símbolo Q: fluxo: calor por unidade de tempo por unidade de área
+%   \end{itemize}
+% \end{frame}
+%
+% \begin{frame}
+% \frametitle{Conservação de temperatura}
+% \[
+%   \pd{\theta}{t} + (\mathbf{u} . \nabla_h)\theta + w\pd{\theta}{z} = \pd{}{z}\left( K_H\pd{\theta}{z} \right) + F_{\theta}
+% \]
+% \end{frame}
+%
+% \begin{frame}
+%   \frametitle{Conservação de calor}
+%   \begin{itemize}[<+-| alert@+>]
+%   \item $Q_S \rightarrow$ Radiação de onda curta (solar incidente);
+%   \item $Q_B \rightarrow$ Radiação de onda longa (emitida pelo oceano e
+%                           refletida por nuvens);
+%   \item $Q_H \rightarrow$ Calor por condução (Sensível);
+%   \item $Q_E \rightarrow$ Calor por evaporação/condensação (Latente);
+%   \item $Q_V \rightarrow$ Calor por advecção.
+%   \end{itemize}
+% \end{frame}
+%
+% \begin{frame}
+%   \frametitle{Conservação de calor}
+%   \begin{block}{}
+%     \[
+%       Q_{net} = Q_S + Q_V + Q_B + Q_H + Q_E + Q_T
+%     \]
+%   \end{block}
+% \end{frame}
+%
+% \subsection{Teoria da radiação eletromagnética}
+% \begin{frame}
+%   \frametitle{Teoria da radiação eletromagnética}
+%   Lei de Stefan diz que um corpo com temperatura $T$ emite radiação  segundo:
+%   \begin{block}{}
+%     \[
+%       Q \sim \sigma T^4
+%     \]
+%   \end{block}
+%   onde, $\sigma \approx 5.7338$ J m$^{-2}$\textdegree{K}$^{-4}$s$^{-1}$
+% \end{frame}
+%
+% \subsubsection{Radiação de ondas curtas}
+% \begin{frame}
+%   \frametitle{Ondas curtas}
+%   \begin{itemize}[<+-| alert@+>]
+%     \item 48\% atinge o mar, dos quais
+%     \item 29\% é radiação direta (do sol)
+%     \item 19\% é radiação indireta (após espalhamento na atmosfera)
+%   \end{itemize}
+% \end{frame}
+%
+% \begin{frame}
+%   \frametitle{Fatore que afetam $Q_S$}
+%   \begin{itemize}[<+-| alert@+>]
+%     \item Duração do dia (depende da estação do ano e da latitude).
+%     \item Elevação do sol (Densidade de energia é proporcional ao seno do
+%           ângulo de elevação do sol).
+%     \item Absorção na atmosfera (devido a moléculas de gás, poeira , vapor
+%           d'água, ...)
+%     \item Efeito de nuvens: que diminui a radiação direta e daí a total,
+%           embora aumente a radiação indireta.
+%     \item Efeito de ondas na superfície do mar. (que modificam os ângulos de
+%           incidência dos raios de sol).
+%   \end{itemize}
+% \end{frame}
+%
+% \subsubsection{Radiação de ondas longas}
+% \begin{frame}
+%   \frametitle{Ondas longas}
+%   \begin{block}{}
+%     $Q_B$ proporcional à temperatura absoluta da superfície elevado à
+%           quarta potência.
+%   \end{block}
+% \end{frame}
+%
+% \begin{frame}
+%   \frametitle{Fatores que influenciam $Q_B$}
+%   {\footnotesize
+%   \begin{itemize}[<+-| alert@+>]
+%     \item Espessura das nuvens. Quanto maior a espessura da nuvem, menos é o
+%           calor que escapa para o espaço.
+%     \item A altura das nuvens, o que determina a temperatura em que a nuvem
+%           irradia calor de volta ao oceano. Nuvens altas são mais frias do que
+%           as nuvens baixas.
+%     \item Quantidade de vapor atmosférico (quanto mais úmido, menor a quantidade
+%           de calor que escapa para o espaço).
+%     \item Temperatura da água (quanto maior a temperatura maior a radiação).
+%     \item Cobertura de gelo e neve. O gelo emite como um corpo negro, mas esfria
+%           muito mais rápido do que as áreas de oceano aberto.  Mares cobertos de
+%           gelo são isolados da atmosfera.
+%   \end{itemize}
+% }
+% \end{frame}
+%
+% \subsubsection{Evaporação}
+% \begin{frame}
+%   \frametitle{Fatores que influenciam $Q_E$}
+%   \begin{itemize}
+%     \item Vento (aumento do vento aumenta a evaporação).
+%     \item Umidade relativa do ar (ar seco aumenta a evaporação).
+%   \end{itemize}
+% \end{frame}
+%
+% \begin{frame}
+%   \frametitle{Evaporação}
+%   \begin{block}{}
+%     Evaporação é muito importante, mas difícil de determinar diretamente.
+%     Implica em perda de volume d'água e de calor.
+%   \end{block}
+% \end{frame}
+%
+% \subsubsection{Condução de calor}
+% \begin{frame}
+%   \frametitle{Condução}
+%   \begin{block}{}
+%     Altamente dependente da diferença de temperatura entre o oceano e a atmosfera.
+%   \end{block}
+%
+% \end{frame}
+%
+% \begin{frame}
+%   \frametitle{$Q_{net}$}
+%   \begin{center}
+%     \includegraphics[scale=0.38]{../figures/convex_narr_fluxes.png}
+%   \end{center}
+% \end{frame}
+%
+%
+% \begin{frame}
+%   \frametitle{Distribuição meridional}
+%   \begin{center}
+%     \includegraphics[scale=0.48]{../figures/Qnet.png}
+%   \end{center}
+% \end{frame}
+%
+%
+% \subsubsection{Razão de Bowen}
+% \begin{frame}
+%   \frametitle{Razão de Bowen}
+%   \begin{block}{}
+%     \[
+%       R = \frac{Q_H}{Q_E}
+%     \]
+%
+%     \[
+%       R = 0.062 \frac{(t_s - t_a)}{e_s - e_a}
+%     \]
+%   \end{block}
+% \end{frame}
+
+\author[Filipe Fernandes]{Filipe P. A. Fernandes}
+\institute[unimonte]{Centro Universitário Monte Serrat}
+\date[Novembro 2012]{12 de Novembro 2012}
+
+\logo{\includegraphics[scale=0.15]{../common/university_logo.png}}
+
+\begin{document}
+
+% The title page frame.
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\section*{Outline}
+\begin{frame}
+\tableofcontents
+\end{frame}
+%
+% Circulação e massas d'água dos oceanos.
+% 6 Circulação e massas d'água dos oceanos
+% 6.1 Aspectos gerais da circulação oceânica
+% 6.2 Convergência e divergência de massas d'água.
+% Ekman
+% 6.3 Padrões de circulação nos oceanos: A circulação de superfície
+% 6.3.1 A circulação de superfície no Oceano Atlântico
+% 6.4 Massas d'água nos oceanos
+% 6.4.1 Massas d'água do Oceano Atlântico
+
+\section{Correntes Oceânicas}
+\begin{frame}
+\frametitle{Correntes Oceânicas}
+  \begin{itemize}[<+-| alert@+>]
+    \item Uma corrente é caracterizada por um fluxo de água no oceano que
+          apresenta uma distribuição coerente em termos de médias temporais;
+    \item A importância de uma corrente é avaliada pelo seu transporte (tanto
+          de volume como de calor) e pela variabilidade dos mesmos;
+    \item As correntes oceânicas tem uma contribuição extremamente relevante no
+          transporte de calor para os polos (principalmente em latitudes médias);
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Correntes Oceânicas}
+  \begin{itemize}[<+-| alert@+>]
+    \item O estudo da circulação oceânica pode ocorrer através de observações
+          in situ (navios, boias, instrumentos fundeados, satélites,
+          derivadores), modelos analíticos e modelos numéricos.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Como são geradas}
+  \begin{itemize}[<+-| alert@+>]
+    \item As correntes oceânicas são geradas por dois mecanismos:
+    \item {\bf Circulação gerada pela vento (0-1000 m):}
+    \item Associada ao padrões de distribuição de ventos globais que formam os
+          giros oceânicos em escalas de bacias;
+    \item Processos desde variação sazonal até escalas climáticas;
+    \item Escala de bacias.
+   \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Como são geradas}
+  \begin{itemize}[<+-| alert@+>]
+    \item {\bf Circulação termo-halina (todo o oceano):}
+    \item Processos relacionados as trocas de calor (aquecimento, resfriamento)
+          e ou água doce (evaporação, precipitação).
+    \item Processos em escalas climáticas;
+    \item Escala global.
+   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Escalas espaço-temporais}
+  Atmosfera
+  {\scriptsize
+\begin{table}
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        Fenômeno                              & Escala espacial    & Escala temporal    &  \\ \hline
+        vórtices turb.                        & poucos metros      & segundos a minutos & A   \\
+        thunderstorms e tornados              & 10 m até 10 km     & minutos até horas  & A/B \\
+        brisa mar/terrestre brisa vales/mont. & 5 km até 100 km    & horas até dias     & B   \\
+        furacões e ciclones tropicais         & 100 km até 500 km  & dias até semana    & C   \\
+        frentes atmosf.                       & 100 km até 5000 km & semanal            & C   \\
+        ventos pred.                          & global             & sazonal até anual  & D   \\
+        variações clim                        & global             & decadal            & D   \\
+        \hline
+    \end{tabular}
+\end{table}
+A -- micro-escala (comprimento típico de 2 m)\\
+B -- meso-escala (comprimento típico de 20 km)\\
+C -- escala sinótica (comprimento típico de 2000 km)\\
+D -- escala global (comprimento típico de 5000 km)\\
+}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Escalas espaço-temporais}
+  Oceano
+  {\scriptsize
+\begin{table}
+    \begin{tabular}{|l|l|l|}
+        \hline
+        Fenômeno                   & Escala espacial     & Escala temporal   \\ \hline
+        ondas de grav. superficial & 10 cm até 100 m     & segundos          \\
+        ondas internas             & 1 m até 1 km        & minutos até dias  \\
+        marés                      & 100 km até 10000 km & dia               \\
+        processos costeiros        & 1 km até 100 km     & vários dias       \\
+        vórtices e frentes         & 10 km até 1000 km   & dias até semanas  \\
+        correntes                  & 50 km até 500 km    & semanal a sazonal \\
+        giros oceânicos            & escala de bacia     & anos\\
+        \hline
+    \end{tabular}
+\end{table}
+}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Agentes Forçantes}
+  \begin{itemize}[<+-| alert@+>]
+    \item[1] Vento.
+    \item[2] Os fluxos entre o oceano e a atmosfera:
+    \begin{enumerate}[<+-| alert@+>]
+      \item Fluxos de calor (balanço de radiação, trocas de calor latente e
+            calor sensível)
+      \item Fluxo de água doce (precipitação e evaporação)
+    \end{enumerate}
+  \end{itemize}
+
+  \pause
+  \begin{block}{}
+  O efeito dos fluxos no oceano:\\
+  Resfriamento e evaporação $\rightarrow$ densidade aumenta\\
+  Aquecimento e precipitação $\rightarrow$ densidade diminui
+  \end{block}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Circulação do vento -- Modelo 00}
+  \begin{center}
+    \includegraphics[scale=0.6]{../figures/vento_simples.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Circulação do vento -- Modelo 01}
+  \begin{center}
+    \includegraphics[scale=0.6]{../figures/vento_simples_02.png}
+  \end{center}
+\end{frame}
+
+
+\subsection{Tensão de cisalhamento do vento e a camada de Ekman}
+\begin{frame}
+  \frametitle{Circulação do vento (Células de vento)}
+  \begin{center}
+    \includegraphics[scale=0.45]{../figures/wind_circulation.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Tensão de cisalhamento do vento}
+  \begin{center}
+    \includegraphics[scale=0.38]{../figures/wind_stress.png}
+  \end{center}
+  \[
+    (\tau_{wind_x}, \tau_{wind_y}) = \rho_{air} C_D U_{10}(u_a, v_a)
+  \]
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Relação entre tensão de cisalhamento do vento e forças de fricção.}
+  \begin{block}{}
+    Tensão de cisalhamento = -fluxo de momento
+  \end{block}
+  \begin{center}
+    \includegraphics[scale=0.27]{../figures/friction_forces.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Turbulência}
+  \begin{center}
+    \includegraphics[scale=0.31]{../figures/turbulence.png}
+  \end{center}
+\end{frame}
+
+
+\subsection{Ekman}
+\begin{frame}
+  \frametitle{Balanço da força de Ekman}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[scale=0.25]{../figures/ekman_scheme.png}
+      \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \[
+        -fv_e = F_x = \frac{1}{\rho_{ref}}\pd{\tau_x}{z}
+      \]
+      \[
+        fu_e = F_y = \frac{1}{\rho_{ref}}\pd{\tau_y}{z}
+      \]
+    \end{column}  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Transporte de Ekman}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[scale=0.25]{../figures/spiral_transport.png}
+      \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \[
+        \mathbf{M}_e = \int_{-D}^0 \rho_{ref}\mathbf{u}_edz
+      \]
+      \[
+        \mathbf{M}_e = \frac{\tau_{wind} \times \hat{z}}{f}
+      \]
+    \end{column}  \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Bombeamento (e sucção) de Ekman}
+  Convergência e divergência no transporte de Ekman causa movimentos verticais.
+  \begin{block}{}
+    \[
+      \pd{w}{z} = -\nabla_h . \mathbf{u}_e \text{, Assume }w=0 \text{ em } z=0
+    \]
+    \[
+      w_{ek} = -\frac{1}{\rho_{ref}}\nabla_h . \mathbf{M}_e \text{, ou}
+    \]
+    \[
+      w_{ek} = -\frac{1}{\rho_{ref}}\hat{z} . \nabla \times \left( \frac{\tau_{wind}}{f} \right)
+    \]
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Distribuição do bombeamento de Ekman}
+      \begin{center}
+        \includegraphics[scale=0.42]{../figures/ekman_pump.png}
+      \end{center}
+\end{frame}
+
+
+\subsection{Balanço Geostrófico}
+\begin{frame}
+  \frametitle{Balanço Geostrófico}
+  {\scriptsize
+  \begin{itemize}[<+-| alert@+>]
+    \item Ocorre amplamente no interior do oceano e da atmosfera;
+    \item É representado pelo equilíbrio entre a Força do Gradiente de Pressão
+          e a Força de Coriolis;
+    \item É um equilíbrio estacionário;
+    \item A pressão em um ponto no interior do oceano é função do peso de água
+          acima deste, que é função da densidade $\rho(S, T, P)$ e da altura da
+          coluna d'água.
+  \end{itemize}
+  \pause
+  \begin{block}{}
+    \[
+      u = -\frac{1}{f\rho}\pd{p}{y}
+    \]
+
+    \[
+      v = -\frac{1}{f\rho}\pd{p}{x}
+    \]
+  \end{block}
+}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Correntes}
+  \begin{center}
+    \includegraphics[scale=1.3]{../figures/currents_cartoon.png}
+  \end{center}
+\end{frame}
+
+\subsection{Sumário}
+\begin{frame}
+\frametitle{Sumário}
+  \begin{itemize}[<+-| alert@+>]
+    \item A circulação gerada pelo vento (principalmente associada aos giros
+          subtropicais), apresenta uma forte simetria entre o HN e HS.
+    \item A circulação envolvendo os 1000 m do oceano é mais rápida, ocorre em
+          escalas de bacias e medidas diretas podem ser usadas para a sua
+          avaliação.
+    \item A circulação termohalina é lenta, ocorre em escala global e é
+          geralmente estudada através do conceito de massas de água.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Desenhar o balanço de forcas!}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Dever de casa}
+  \pause
+    Chequem o portal!
+\end{frame}
+
+\end{document}
