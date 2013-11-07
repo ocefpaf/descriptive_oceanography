@@ -1,239 +1,8 @@
-% % Title page.
-% \title[Aula 10]{Correntes oceânicas}
-% \section{Circulação termohalina}
-% \subsection{Leis de conservação}
-% \subsubsection{Conservação de massa}
-% \begin{frame}
-% \frametitle{Conservação de massa}
-% {\small
-%   \begin{itemize}[<+-| alert@+>]
-%     \item A lei de conservação da massa é utilizada em Oceanografia em diversas
-%           situações;
-%     \item Por exemplo, para um canal, esta lei exige que a massa de água que
-%           passa pela entrada menos a massa que passa pela saída do canal seja
-%           igual à variação da massa de água no interior do canal (normalmente
-%           indicada pela variação do nível da superfície da água).
-%     \item E no meio oceânico como um todo, a massa de água advinda de
-%           precipitações de chuva e neve mais a recebida por rios e derretimento
-%           de gelo é aproximadamente igual à massa de água perdida por
-%           evaporação mais a que congela.
-%   \end{itemize}
-% }
-% \end{frame}
-%
-% \subsubsection{Ciclo hidrológico/Conservação do volume}
-% \begin{frame}
-% \frametitle{Conservação do volume}
-%   \begin{itemize}[<+-| alert@+>]
-%     \item Princípio da conservação do volume (ou equação da continuidade):
-%     \item Consequência do fato da compressibilidade da água ser pequena.
-%   \end{itemize}
-%   \begin{block}{}
-%   \[
-%     V_i + R + P = V_o + E
-%   \]
-%   \[
-%     Vo - V_i = R + P - E
-%   \]
-%   \end{block}
-% \end{frame}
-%
-%
-% \begin{frame}
-% \frametitle{Equação da continuidade}
-% \[
-%   \nabla_h . \mathbf{u} + \pd{w}{z} = 0
-% \]
-%
-% ou,
-%
-% \[
-%   \pd{u}{x} + \pd{v}{y} + \pd{w}{z} = 0
-% \]
-% \end{frame}
-%
-%
-% \subsubsection{Conservação do sal}
-% \begin{frame}
-% \frametitle{Conservação de salinidade}
-% \[
-%   \pd{S}{t} + (\mathbf{u} . \nabla_h)S + w\pd{S}{z} = \pd{}{z}\left( K_H\pd{S}{z} \right) + F_S
-% \]
-%
-% ou (modelo de caixa),
-% \begin{block}{}
-% \[
-%   V_iS_i = V_oS_o
-% \]
-% \end{block}
-% \end{frame}
-%
-%
-% \subsubsection{Conservação de calor}
-% \begin{frame}
-%   \frametitle{Conservação de calor}
-%   \begin{itemize}[<+-| alert@+>]
-%   \item A temperatura das águas oceânicas varia no espaço e no tempo.
-%   \item Esta variação depende dos fluxos de calor que entram e saem em cada
-%         corpo d'água, e o cálculo desses fluxos se denomina "balanço térmico".
-%   \item Esses fluxos de radiação normalmente são denotados pela letra Q,
-%         com índices identificando cada componente do balanço térmico.
-%   \item Símbolo Q: fluxo: calor por unidade de tempo por unidade de área
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}
-% \frametitle{Conservação de temperatura}
-% \[
-%   \pd{\theta}{t} + (\mathbf{u} . \nabla_h)\theta + w\pd{\theta}{z} = \pd{}{z}\left( K_H\pd{\theta}{z} \right) + F_{\theta}
-% \]
-% \end{frame}
-%
-% \begin{frame}
-%   \frametitle{Conservação de calor}
-%   \begin{itemize}[<+-| alert@+>]
-%   \item $Q_S \rightarrow$ Radiação de onda curta (solar incidente);
-%   \item $Q_B \rightarrow$ Radiação de onda longa (emitida pelo oceano e
-%                           refletida por nuvens);
-%   \item $Q_H \rightarrow$ Calor por condução (Sensível);
-%   \item $Q_E \rightarrow$ Calor por evaporação/condensação (Latente);
-%   \item $Q_V \rightarrow$ Calor por advecção.
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}
-%   \frametitle{Conservação de calor}
-%   \begin{block}{}
-%     \[
-%       Q_{net} = Q_S + Q_V + Q_B + Q_H + Q_E + Q_T
-%     \]
-%   \end{block}
-% \end{frame}
-%
-% \subsection{Teoria da radiação eletromagnética}
-% \begin{frame}
-%   \frametitle{Teoria da radiação eletromagnética}
-%   Lei de Stefan diz que um corpo com temperatura $T$ emite radiação  segundo:
-%   \begin{block}{}
-%     \[
-%       Q \sim \sigma T^4
-%     \]
-%   \end{block}
-%   onde, $\sigma \approx 5.7338$ J m$^{-2}$\textdegree{K}$^{-4}$s$^{-1}$
-% \end{frame}
-%
-% \subsubsection{Radiação de ondas curtas}
-% \begin{frame}
-%   \frametitle{Ondas curtas}
-%   \begin{itemize}[<+-| alert@+>]
-%     \item 48\% atinge o mar, dos quais
-%     \item 29\% é radiação direta (do sol)
-%     \item 19\% é radiação indireta (após espalhamento na atmosfera)
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}
-%   \frametitle{Fatore que afetam $Q_S$}
-%   \begin{itemize}[<+-| alert@+>]
-%     \item Duração do dia (depende da estação do ano e da latitude).
-%     \item Elevação do sol (Densidade de energia é proporcional ao seno do
-%           ângulo de elevação do sol).
-%     \item Absorção na atmosfera (devido a moléculas de gás, poeira , vapor
-%           d'água, ...)
-%     \item Efeito de nuvens: que diminui a radiação direta e daí a total,
-%           embora aumente a radiação indireta.
-%     \item Efeito de ondas na superfície do mar. (que modificam os ângulos de
-%           incidência dos raios de sol).
-%   \end{itemize}
-% \end{frame}
-%
-% \subsubsection{Radiação de ondas longas}
-% \begin{frame}
-%   \frametitle{Ondas longas}
-%   \begin{block}{}
-%     $Q_B$ proporcional à temperatura absoluta da superfície elevado à
-%           quarta potência.
-%   \end{block}
-% \end{frame}
-%
-% \begin{frame}
-%   \frametitle{Fatores que influenciam $Q_B$}
-%   {\footnotesize
-%   \begin{itemize}[<+-| alert@+>]
-%     \item Espessura das nuvens. Quanto maior a espessura da nuvem, menos é o
-%           calor que escapa para o espaço.
-%     \item A altura das nuvens, o que determina a temperatura em que a nuvem
-%           irradia calor de volta ao oceano. Nuvens altas são mais frias do que
-%           as nuvens baixas.
-%     \item Quantidade de vapor atmosférico (quanto mais úmido, menor a quantidade
-%           de calor que escapa para o espaço).
-%     \item Temperatura da água (quanto maior a temperatura maior a radiação).
-%     \item Cobertura de gelo e neve. O gelo emite como um corpo negro, mas esfria
-%           muito mais rápido do que as áreas de oceano aberto.  Mares cobertos de
-%           gelo são isolados da atmosfera.
-%   \end{itemize}
-% }
-% \end{frame}
-%
-% \subsubsection{Evaporação}
-% \begin{frame}
-%   \frametitle{Fatores que influenciam $Q_E$}
-%   \begin{itemize}
-%     \item Vento (aumento do vento aumenta a evaporação).
-%     \item Umidade relativa do ar (ar seco aumenta a evaporação).
-%   \end{itemize}
-% \end{frame}
-%
-% \begin{frame}
-%   \frametitle{Evaporação}
-%   \begin{block}{}
-%     Evaporação é muito importante, mas difícil de determinar diretamente.
-%     Implica em perda de volume d'água e de calor.
-%   \end{block}
-% \end{frame}
-%
-% \subsubsection{Condução de calor}
-% \begin{frame}
-%   \frametitle{Condução}
-%   \begin{block}{}
-%     Altamente dependente da diferença de temperatura entre o oceano e a atmosfera.
-%   \end{block}
-%
-% \end{frame}
-%
-% \begin{frame}
-%   \frametitle{$Q_{net}$}
-%   \begin{center}
-%     \includegraphics[scale=0.38]{../figures/convex_narr_fluxes.png}
-%   \end{center}
-% \end{frame}
-%
-%
-% \begin{frame}
-%   \frametitle{Distribuição meridional}
-%   \begin{center}
-%     \includegraphics[scale=0.48]{../figures/Qnet.png}
-%   \end{center}
-% \end{frame}
-%
-%
-% \subsubsection{Razão de Bowen}
-% \begin{frame}
-%   \frametitle{Razão de Bowen}
-%   \begin{block}{}
-%     \[
-%       R = \frac{Q_H}{Q_E}
-%     \]
-%
-%     \[
-%       R = 0.062 \frac{(t_s - t_a)}{e_s - e_a}
-%     \]
-%   \end{block}
-% \end{frame}
-
+% Title page.
+\title[Aula 10]{Correntes oceânicas}
 \author[Filipe Fernandes]{Filipe P. A. Fernandes}
 \institute[unimonte]{Centro Universitário Monte Serrat}
-\date[Novembro 2012]{12 de Novembro 2012}
+\date[Novembro 2013]{08 de Novembro 2013}
 
 \logo{\includegraphics[scale=0.15]{../common/university_logo.png}}
 
@@ -248,16 +17,6 @@
 \begin{frame}
 \tableofcontents
 \end{frame}
-%
-% Circulação e massas d'água dos oceanos.
-% 6 Circulação e massas d'água dos oceanos
-% 6.1 Aspectos gerais da circulação oceânica
-% 6.2 Convergência e divergência de massas d'água.
-% Ekman
-% 6.3 Padrões de circulação nos oceanos: A circulação de superfície
-% 6.3.1 A circulação de superfície no Oceano Atlântico
-% 6.4 Massas d'água nos oceanos
-% 6.4.1 Massas d'água do Oceano Atlântico
 
 \section{Correntes Oceânicas}
 \begin{frame}
@@ -299,7 +58,7 @@
 \begin{frame}
 \frametitle{Como são geradas}
   \begin{itemize}[<+-| alert@+>]
-    \item {\bf Circulação termo-halina (todo o oceano):}
+    \item {\bf Circulação termohalina (todo o oceano):}
     \item Processos relacionados as trocas de calor (aquecimento, resfriamento)
           e ou água doce (evaporação, precipitação).
     \item Processos em escalas climáticas;
@@ -307,51 +66,51 @@
    \end{itemize}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Escalas espaço-temporais}
-  Atmosfera
-  {\scriptsize
-\begin{table}
-    \begin{tabular}{|l|l|l|l|}
-        \hline
-        Fenômeno                              & Escala espacial    & Escala temporal    &  \\ \hline
-        vórtices turb.                        & poucos metros      & segundos a minutos & A   \\
-        thunderstorms e tornados              & 10 m até 10 km     & minutos até horas  & A/B \\
-        brisa mar/terrestre brisa vales/mont. & 5 km até 100 km    & horas até dias     & B   \\
-        furacões e ciclones tropicais         & 100 km até 500 km  & dias até semana    & C   \\
-        frentes atmosf.                       & 100 km até 5000 km & semanal            & C   \\
-        ventos pred.                          & global             & sazonal até anual  & D   \\
-        variações clim                        & global             & decadal            & D   \\
-        \hline
-    \end{tabular}
-\end{table}
-A -- micro-escala (comprimento típico de 2 m)\\
-B -- meso-escala (comprimento típico de 20 km)\\
-C -- escala sinótica (comprimento típico de 2000 km)\\
-D -- escala global (comprimento típico de 5000 km)\\
-}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Escalas espaço-temporais}
+%   Atmosfera
+%   {\scriptsize
+% \begin{table}
+%     \begin{tabular}{|l|l|l|l|}
+%         \hline
+%         Fenômeno                              & Escala espacial    & Escala temporal    &  \\ \hline
+%         vórtices turb.                        & poucos metros      & segundos a minutos & A   \\
+%         thunderstorms e tornados              & 10 m até 10 km     & minutos até horas  & A/B \\
+%         brisa mar/terrestre brisa vales/mont. & 5 km até 100 km    & horas até dias     & B   \\
+%         furacões e ciclones tropicais         & 100 km até 500 km  & dias até semana    & C   \\
+%         frentes atmosf.                       & 100 km até 5000 km & semanal            & C   \\
+%         ventos pred.                          & global             & sazonal até anual  & D   \\
+%         variações clim                        & global             & decadal            & D   \\
+%         \hline
+%     \end{tabular}
+% \end{table}
+% A -- micro-escala (comprimento típico de 2 m)\\
+% B -- meso-escala (comprimento típico de 20 km)\\
+% C -- escala sinótica (comprimento típico de 2000 km)\\
+% D -- escala global (comprimento típico de 5000 km)\\
+% }
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Escalas espaço-temporais}
-  Oceano
-  {\scriptsize
-\begin{table}
-    \begin{tabular}{|l|l|l|}
-        \hline
-        Fenômeno                   & Escala espacial     & Escala temporal   \\ \hline
-        ondas de grav. superficial & 10 cm até 100 m     & segundos          \\
-        ondas internas             & 1 m até 1 km        & minutos até dias  \\
-        marés                      & 100 km até 10000 km & dia               \\
-        processos costeiros        & 1 km até 100 km     & vários dias       \\
-        vórtices e frentes         & 10 km até 1000 km   & dias até semanas  \\
-        correntes                  & 50 km até 500 km    & semanal a sazonal \\
-        giros oceânicos            & escala de bacia     & anos\\
-        \hline
-    \end{tabular}
-\end{table}
-}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Escalas espaço-temporais}
+%   Oceano
+%   {\scriptsize
+% \begin{table}
+%     \begin{tabular}{|l|l|l|}
+%         \hline
+%         Fenômeno                   & Escala espacial     & Escala temporal   \\ \hline
+%         ondas de grav. superficial & 10 cm até 100 m     & segundos          \\
+%         ondas internas             & 1 m até 1 km        & minutos até dias  \\
+%         marés                      & 100 km até 10000 km & dia               \\
+%         processos costeiros        & 1 km até 100 km     & vários dias       \\
+%         vórtices e frentes         & 10 km até 1000 km   & dias até semanas  \\
+%         correntes                  & 50 km até 500 km    & semanal a sazonal \\
+%         giros oceânicos            & escala de bacia     & anos\\
+%         \hline
+%     \end{tabular}
+% \end{table}
+% }
+% \end{frame}
 
 \begin{frame}
   \frametitle{Agentes Forçantes}
