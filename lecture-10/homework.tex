@@ -1,0 +1,69 @@
+\documentclass[12pt,portuguese,a4paper,pdftex]{article}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage[left=2cm,top=2cm,right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{epsf,epsfig}
+\usepackage{url}
+\usepackage[bookmarks=false,colorlinks=true,urlcolor={green},linkcolor={green},pdfstartview={XYZ null null 1.22}]{hyperref} % change colors for all references
+\usepackage{amssymb,amsmath}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\everymath{\displaystyle}
+\usepackage{float}
+
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivatives
+
+%% PDF metadata
+\pdfinfo{% hyperref overrides this
+  /Title    (Dever de Casa 10)
+%   /Author   (Filipe Fernandes)
+%   /Creator  (Filipe Fernandes)
+%   /Producer (Filipe Fernandes)
+  /Subject  (Oceanografia Física Descritiva)
+  /Keywords (oceanografia)
+}
+
+\title{Dever de casa 10}
+% \author{Filipe Fernandes}
+\date{08-Nov-2013} % if comment gets today
+
+\begin{document}
+\maketitle
+\doublespacing
+
+A imagem do satélite NOAA abaixo foi obtida com sensor AVHRR, que mede
+a radiação infra-vermelha e permite que a temperatura da superfície do oceano
+seja mapeada remotamente.  Na imagem, os tons em vermelho denotam águas mais
+quentes que os tons em amarelo.  A região de máximo gradiente está editada como
+um linha grossa preta separando águas mais costeiras de águas mais oceânicas.
+
+Os tons esverdeados/azuis nos entornos dos Cabo de São Tomé e Frio estão
+associados a águas bastantes mais frias que tanto águas costeiras e oceânicas.
+São a assinatura termal do fenômeno da ressurgência costeira.
+
+\begin{figure}[H]
+\vspace{1cm}
+  \centerline{\includegraphics[scale=0.6]{../figures/satelite.png}}
+\end{figure}
+
+\begin{enumerate}
+  \item Discorra e esquematize como o vento de Nordeste causa este fenômeno em
+        Cabo Frio.  No esquema, represente o transporte de Ekman.  Apresente
+        esquemas tanto no plano horizontal como uma seção transversal ao Cabo Frio.
+
+  \item Explique como a superfície do oceano e as isopicnais respondem a este
+        fenômeno.
+
+  \item Discorra e esquematize como o vento de Sudoeste causa o fenômeno da
+        subsidência em Cabo Frio.  No esquema, represente o transporte de
+        Ekman.  Apresente esquemas tanto no plano horizontal como uma seção transversal ao Cabo Frio.
+
+  \item Explique como a superfície do oceano e as isopicnais respondem a este
+        fenômeno.
+
+  \item Demonstre o balanço de forças no caso da ressurgência.
+\end{enumerate}
+\end{document}
