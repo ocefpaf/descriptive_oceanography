@@ -1,0 +1,238 @@
+% Style.
+\documentclass[letterpaper,portuguese,12pt,pdftex]{exam}
+
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage[left=2.5cm,top=3cm,right=2.5cm]{geometry}
+
+% Portuguese.
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{textcomp}
+
+% Font.
+\usepackage{lmodern}
+
+% Figures.
+\usepackage{epsf,epsfig}
+
+% Bibtex and extras.
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[bookmarks=false,colorlinks=true,urlcolor={green},linkcolor={green},pdfstartview={XYZ null null 1.22}]{hyperref}
+
+% Math.
+\usepackage{amssymb,amsmath}
+\usepackage{mathtools}
+\everymath{\displaystyle}
+
+\newcommand{\sen}{\operatorname{sen}}
+
+% Exam.
+\addpoints
+% \printanswers
+\noprintanswers
+\usepackage{color}
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+\shadedsolutions
+\renewcommand{\solutiontitle}{\noindent\textbf{Solução:}\par\noindent}
+\pagestyle{headandfoot}
+\footer{}{Página \thepage\ de \numpages}{}
+\boxedpoints
+\pointsinrightmargin
+\pointpoints{ponto}{pontos}
+\hqword{Questão}
+\hpword{Pontos}
+\hsword{Nota}
+% \qformat{\textbf{Question\thequestion}\quad(\thepoints)\hfill}
+
+% User commands.
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+% PDF metadata.
+\pdfinfo{% hyperref overrides this
+  /Title    (Prova 02 -- Oceanografia Física Descritiva)
+  /Author   (Filipe Fernandes)
+  /Creator  (Filipe Fernandes)
+  /Producer (Filipe Fernandes)
+  /Subject  (prova)
+  /Keywords (prova, oceanografia)
+}
+
+% Front page.
+\title{Prova 02 -- Oceanografia Física Descritiva}
+\author{Prof. Filipe Fernandes}
+\date{06-Dez-2013}
+
+\begin{document}
+\maketitle
+\doublespacing
+
+\vspace{1cm}
+\hbox to \textwidth{Nome e número de matrícula:\enspace\hrulefill}
+\vspace{1cm}
+
+\begin{minipage}{.8\textwidth}
+Esse exame incluí \numquestions\ questões. O número total de pontos é \numpoints.
+\vspace{1cm}
+
+Essa prova segue o Acordo Ortográfico da Língua Portuguesa de 1990 (vigor no
+início 2009).  Por isso erros de ortografia e gramática serão descontados da sua
+nota.
+
+A prova deve ser feita individualmente e sem consulta.  O aluno deverá usar
+CANETA (preta ou azul) para responder as questões – qualquer questão respondida
+à lápis não será considerada na hora da correção.  Coloque seu nome em TODAS as
+folhas.
+
+\vspace{1cm}
+
+Leia atentamente todas as questões: a interpretação faz parte da questão.
+
+\end{minipage}
+
+\clearpage
+
+
+\begin{questions}
+
+\question[5]
+Explique o que são {\bf massas d'água}.  Como são {\bf formadas} e como podemos
+{\bf rastreá-las} nos oceanos.  Faça uso da equação abaixo em sua explicação.
+Qual termo {\bf não} pode existir para que a propriedade em questão seja
+{\bf conservativa}.
+
+\[
+  \underbrace{\pd{S}{t}}_a = \underbrace{\vec{u}\nabla S}_b + \underbrace{\phi}_c
+\]
+
+\begin{solution}
+ Massas d'água é uma porção de água do mar com uma origem determinada.
+ Formam-se na superfície do mar devido às forças atmosféricas ganhando o seu $T$
+ e $S$ característico pelo qual podemos rastreá-las.  Na equação temos que
+ cortar o termo que corresponde à fonte ou sorvedouro $\phi$.
+\end{solution}
+
+
+\question[3]
+Sobre a força/aceleração de Coriolis.  Indique se as alternativas abaixo são
+VERDADEIRA ou FALSAS e explique porque.
+\begin{itemize}
+  \item[a)] A força de Coriolis é máxima na Equador.
+  \item[b)] Como a força de Coriolis é fruto do produto VETORIAL entre a velocidade
+        relativa da partícula e o sistema de coordenadas em rotação, apenas a
+        componente vertical é importante para estudos do seu efeito na
+        horizontal.
+  \item[b)] A revolução da Terra é dada pelo dia sideral que leva em conta a rotação
+        do sistema Terra, Sol e Via Láctea.
+  \item[c)] O efeito da esfericidade da Terra é ignorado quando Coriolis é
+  aproximado para um plano Cartesiano.
+
+\end{itemize}
+
+
+
+\question
+A figura \ref{fig:giro} é uma representação esquemática de um típico {\bf Giro
+Subtropical}, como os que formam as correntes do Brasil e corrente do Golfo.
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics{./figures/agua_central.png}
+  \caption{Giro Subtropical.}
+  \label{fig:giro}
+\end{figure}
+
+\begin{parts}
+  \part[3]
+  Explique como se dá o ``{\bf transporte de Ekman}'' assinalado pelas setas
+  transparentes.  Sua resposta deve conter o {\bf balanço de forças},
+  {\bf espiral de Ekman}, e {\bf transporte} integrado na coluna d'água.
+
+  \begin{solution}
+   O transporte de Ekman se da pelo balanço entre as forças de atrito e Coriolis.
+   O transporte integrado na coluna d'água é o somatório da espiral na profundidade
+   da influência de Ekman.
+  \end{solution}
+
+  \part[1]
+  Usando conceitos de {\bf convergência} e {\bf divergência}, explique como o
+  transporte de  Ekman gera a {\bf alta pressão} do Giro subtropical.  Qual é o
+  papel desse fenômeno na formação da {\bf água central}?
+
+  \begin{solution}
+   Devido à circulação vento temos sempre transporte de Ekman para o centro do Giro.
+   Assim, temos água ``acumulando'' no centro gerando a alta pressão.  Para compensar
+   essa água, temos o bombeamento de Ekman para o interior do oceano ``empurrando''
+   a Água central.
+  \end{solution}
+
+\end{parts}
+
+\question
+A corrente do Brasil nas proximidades de 20\textdegree{S} (latitude) tem
+velocidades superficiais na ordem de -0,65 m s$^{-1}$ e uma largura média de
+$\sim$ 100 km.
+
+Sabendo que a velocidade {\bf geostrófica} é dada por:
+ \[
+    fv = g\tan(\theta),
+ \]
+
+
+onde:
+\begin{itemize}
+ \item $v$ é a velocidade meridional;
+ \item $f$ o parâmetro de Coriolis dado por $2\Omega\sen(\text{lat})$ e,
+  \begin{enumerate}
+   \item[] $\Omega = 7.29 \times 10^{-5}$ rad s$^{-1}$;
+   \item[] lat $\equiv$ latitude local;
+  \end{enumerate}
+
+ \item $g$ a aceleração da gravidade;
+ \item $\theta$ o ângulo formado pela declinação da superfície livre.
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.7]{./figures/BC_slope.png}
+  \caption{Desenho esquemático da declinação gerada pela alta pressão do giro
+           Subtropical.}
+  \label{fig:BC}
+\end{figure}
+
+\begin{parts}
+
+\part[3]
+Estime a magnitude da declinação da superfície livre ($\Delta h$) que cruza a
+corrente do Brasil.
+
+
+\begin{solution}
+\begin{align*}
+  f &= 2\Omega\sen\left( \dfrac{-20 \pi}{180} \right) \\
+  f &= 0.0001458423 \sen(-0.349)\\
+  f &= -4.988\times 10^{-5} \text { s}^{-1}\\
+  &\downarrow\\
+ \tan\phi &= \frac{fv}{g}\\
+ \tan\phi &= \frac{-4.988\times 10^{-5} \text { s}^{-1} \times -0.65 \text{ m s}^{-1}}{9.8 \text{ m s}^{-2}}\\
+  \phi &= \arctan({3.308 \times 10^{-6}})\\
+  \phi &=0.000189^{\circ}\\
+  \text{ ou,}\\
+ \Delta h &= 10^5\text{ m} \times 3.308 \times 10^{-6}\\
+ \Delta h &= 0.33 \text{ m}
+\end{align*}
+
+\end{solution}
+
+\end{parts}
+
+\question
+Extra (5 pontos).
+Discorra sobre a definição do que são correntes oceânicas, e fale sobre as
+diferenças da circulação termohalina e gerada pelo vento.
+
+\end{questions}
+\end{document}
