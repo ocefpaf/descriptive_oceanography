@@ -145,3 +145,263 @@
     formas simplificadas da equação de estado da água do mar.  Exemplificar.
   \end{parts}
 \end{questions}
+
+
+
+\question[5]
+Explique o que são {\bf massas d'água}.  Como são {\bf formadas} e como podemos
+{\bf rastreá-las} nos oceanos.  Faça uso da equação abaixo em sua explicação.
+Qual termo {\bf não} pode existir para que a propriedade em questão seja
+{\bf conservativa}.
+
+\[
+  \underbrace{\pd{S}{t}}_a = \underbrace{\vec{u}\nabla S}_b + \underbrace{\phi}_c
+\]
+
+\begin{solution}
+ Massas d'água é uma porção de água do mar com uma origem determinada.
+ Formam-se na superfície do mar devido às forças atmosféricas ganhando o seu $T$
+ e $S$ característico pelo qual podemos rastreá-las.  Na equação temos que
+ cortar o termo que corresponde à fonte ou sorvedouro $\phi$.
+\end{solution}
+
+
+\question[3]
+Os digramas TS abaixo (Fig. \ref{fig:mistura}) representam dois tipos de mistura
+({\bf Diapicnal e isopicnal}). {\bf Assinale} qual diagrama representa cada tipo
+de mistura.  {\bf Explique} a diferença entre esse dois tipos e {\bf comente}
+qual deles necessita de energia para exercer {\bf trabalho vertical}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.65]{./mixing_types.png}
+  \caption{Diagrama TS.}
+  \label{fig:mistura}
+\end{figure}
+
+\begin{solution}
+ A) Isopicnal: Mistura por difusão ao longo da superfície de mesma densidade.\\
+ B) Diapicnal: Mistura mecânica (com trabalho) ao longo de superfícies de densidade.\\
+\end{solution}
+
+\clearpage
+
+\question
+A figura \ref{fig:giro} é uma representação esquemática de um típico {\bf Giro
+Subtropical}, como os que formam as correntes do Brasil e corrente do Golfo.
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics{./agua_central.png}
+  \caption{Giro Subtropical.}
+  \label{fig:giro}
+\end{figure}
+
+\begin{parts}
+  \part[3]
+  Explique como se dá o ``{\bf transporte de Ekman}'' assinalado pelas setas
+  transparentes.  Sua resposta deve conter o {\bf balanço de forças},
+  {\bf espiral de Ekman}, e {\bf transporte} integrado na coluna d'água.
+
+  \begin{solution}
+   O transporte de Ekman se da pelo balanço entre as forças de atrito e Coriolis.
+   O transporte integrado na coluna d'água é o somatório da espiral na profundidade
+   da influência de Ekman.
+  \end{solution}
+
+  \part[1]
+  Usando conceitos de {\bf convergência} e {\bf divergência}, explique como o
+  transporte de  Ekman gera a {\bf alta pressão} do Giro subtropical.  Qual é o
+  papel desse fenômeno na formação da {\bf água central}?
+
+  (Dica: pense em bombeamento de Ekman.)
+
+  \begin{solution}
+   Devido à circulação vento temos sempre transporte de Ekman para o centro do Giro.
+   Assim, temos água ``acumulando'' no centro gerando a alta pressão.  Para compensar
+   essa água, temos o bombeamento de Ekman para o interior do oceano ``empurrando''
+   a Água central.
+  \end{solution}
+
+\end{parts}
+
+\question
+{\bf Modelo em caixa de um estuário (Figura \ref{fig:box}).}
+
+Um estuário tem os transportes de {\bf entrada} e {\bf saída} $T_i$ e $T_o$
+respectivamente.  Durante um ano normal, o transporte oriundo dos {\bf rios}
+nesse estuário é de 50 m$^3$ s$^{-1}$.  A {\bf evaporação} total, durante esse
+ano típico, excede a {\bf precipitação} em 4 m$^3$ s$^{-1}$.  As {\bf salinidades}
+estuarina e oceânica são de 30 e 36 g kg$^{-1}$ respectivamente.
+
+Usando a equação da {\bf conservação de volume} (equação \ref{eq:conservation0} ou \ref{eq:conservation1}) e a equação de {\bf conservação de sal} \ref{eq:salt}
+responda.
+
+\begin{align}
+  \underbrace{T_i + R + P}_{\text{Volume de entrada}} &= \underbrace{T_o + E}_{\text{Volume de saída}} \text{, ou} \label{eq:conservation0}\\
+  T_i + R &= T_o + (E-P) \label{eq:conservation1}\\
+  T_iS_i &= T_oS_o \label{eq:salt}
+\end{align}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.5]{./box_model.png}
+  \caption{Modelo em caixa de um estuário.}
+  \label{fig:box}
+\end{figure}
+
+\begin{parts}
+  \part[2]
+  Calcule o transporte de entrada $T_i$.
+
+  \begin{solution}
+   \[
+    T_i = \frac{S_o}{S_i - S_o}\left[R-(E-P)\right]
+   \]
+   \[
+    T_i = \frac{30}{6}[50-4] = 230 \text{ m}^3 \text{s}^{-1}
+   \]
+  \end{solution}
+
+
+  \part[2]
+  Durante uma {\bf seca} o transporte do rio caí para 25 m$^3$ s$^{-1}$, e a
+  evaporação {\bf excede} a precipitação em 6 m$^3$ s$^{-1}$.  Assumindo que a
+  quantidade de sal que entra no estuário não muda ($S_i$), calcule a {\bf nova
+  salinidade} dentro do estuário ($S_o$).
+
+  \begin{solution}
+   \begin{align*}
+    S_o &= \frac{T_iS_i}{T_o}\\
+    T_o &= T_i + R - (E-P)
+   \end{align*}
+   \[
+      T_o = 230 + 25 - 6 = 249 \text{ m}^3 \text{s}^{-1}
+   \]
+   \[
+      S_o = \frac{230 \times 36}{249} = 33.25 \text{ g kg}^{-1}
+   \]
+  \end{solution}
+
+  \part[4]
+  Se assumirmos que o volume do estuário é {\bf constante} e definido Tempo de
+  de Residência ($RT$) como:
+  \[
+    RT = \frac{\text{Volume total}}{\text{Volume de entrada}}
+  \]
+
+  Qual é a {\bf taxa} do tempo de residência antes da seca ($RT_{\text{antes}}$)
+  e depois da seca ($RT_{\text{depois}}$)?
+
+  \begin{solution}
+    \[
+      \text{Volume de entrada} = T_i + R
+    \]
+   \[
+      \frac{RT_1}{RT_2} = \frac{\text{Entrada}_2}{\text{Entrada}_1} = \frac{230+25}{230+50} = 0.91
+   \]
+  \end{solution}
+
+\end{parts}
+
+\question
+A corrente do Brasil nas proximidades de 20\textdegree{S} tem velocidades
+superficiais na ordem de 0.65 m s$^{-1}$ e uma largura média de $\sim$ 100 km.
+
+Sabendo que a velocidade {\bf geostrófica} é dada por:
+ \[
+    fv = g\tan(\theta),
+ \]
+
+
+onde:
+\begin{itemize}
+ \item $v$ é a velocidade meridional;
+ \item $f$ o parâmetro de Coriolis dado por $2\Omega\sin(\text{lat})$ e,
+  \begin{enumerate}
+   \item[] $\Omega = 7.29 \times 10^{-5}$ rad s$^{-1}$;
+   \item[] lat $\equiv$ latitude local;
+  \end{enumerate}
+
+ \item $g$ a aceleração da gravidade;
+ \item $\theta$ o ângulo formado pela declinação da superfície livre.
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.7]{./BC_slope.png}
+  \caption{Desenho esquemático da declinação gerada pela alta pressão do giro
+           Subtropical.}
+  \label{fig:BC}
+\end{figure}
+
+\begin{parts}
+
+\part[3]
+Estime a magnitude e direção da declinação da superfície livre que cruza a
+corrente do Brasil.
+
+\clearpage
+
+\begin{solution}
+
+\begin{align*}
+  f &= 2\Omega\sin(-20)\\
+  f &= 0.0001458423 \sin(-0.349)\\
+  f &= -4.988\times 10^{-5} \text { s}^{-1}\\
+  &\downarrow\\
+ \tan\phi &= \frac{fv}{g}\\
+ \tan\phi &= \frac{-4.988\times 10^{-5} \text { s}^{-1} \times 0.65 \text{ m s}^{-1}}{9.8 \text{ m s}^{-2}}\\
+  \phi &= \arctan{-3.642 \times ^{-6}}\\
+  \phi &= -0.000208^{\circ}\\
+  \text{ ou,}\\
+ \Delta h &= 10^5\text{ m} \times -3.642 \times ^{-6}\\
+ \Delta h &= 0.36 \text{ m}
+\end{align*}
+
+\end{solution}
+
+\end{parts}
+
+\question
+Sabemos que as componentes individuais de {\bf radiação térmica} são:
+  \begin{itemize}
+  \item $Q_S \rightarrow$ Radiação de onda curta (solar incidente);
+  \item $Q_B \rightarrow$ Radiação de onda longa (emitida pelo oceano e
+                          refletida por nuvens);
+  \item $Q_H \rightarrow$ Calor por condução (Sensível);
+  \item $Q_E \rightarrow$ Calor por evaporação/condensação (Latente);
+  \item $Q_V \rightarrow$ Calor por advecção.
+  \end{itemize}
+
+E que o calor {\bf total} devido a radiação {\bf atmosférica} em uma certa
+parcela de água se dá por:
+    \[
+      Q_{net} = Q_S + Q_B + Q_H + Q_E
+    \]
+
+\begin{parts}
+ \part[1]
+ Estimativas de satélite de temperatura superficial do mar (TSM) observadas por
+ um certo período de tempo mostram que, uma camada à 25 m de profundidade,
+ chamada de ``camada de mistura'' (localizada acima da termoclina) está
+ {\bf esquentando mais que devia} quando computamos o balanço $Q_{net}$ vertical
+ (ou atmosférico) {\bf chegando}.
+
+  Usando o que você sabe sobre balanço de calor re-escreva a equação de $Q_{net}$
+  incluindo o termo responsável por esse aquecimento (explique o porque).
+
+  \begin{solution}
+   Apenas o transporte de calor advectado pode ser o responsável por esse
+   aquecimento anômalo $ Q_V$
+  \end{solution}
+
+  \part[1]
+  Esquematize um diagrama com o que pode estar ocorrendo.
+
+  \begin{solution}
+   Inserir figura.
+  \end{solution}
+
+\end{parts}
