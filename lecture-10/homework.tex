@@ -13,15 +13,16 @@
 \usepackage{textcomp}
 \everymath{\displaystyle}
 \usepackage{float}
+\usepackage{subfigure}
 
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivatives
 
 %% PDF metadata
 \pdfinfo{% hyperref overrides this
   /Title    (Dever de Casa 10)
-%   /Author   (Filipe Fernandes)
-%   /Creator  (Filipe Fernandes)
-%   /Producer (Filipe Fernandes)
+  /Author   (Filipe Fernandes)
+  /Creator  (Filipe Fernandes)
+  /Producer (Filipe Fernandes)
   /Subject  (Oceanografia Física Descritiva)
   /Keywords (oceanografia)
 }
@@ -66,4 +67,61 @@ São a assinatura termal do fenômeno da ressurgência costeira.
 
   \item Demonstre o balanço de forças no caso da ressurgência.
 \end{enumerate}
+
+\clearpage
+
+\begin{enumerate}
+  \item Ventos Nordeste são ventos propícios a Ressurgência devido ao transporte
+        de Ekman resultante ser para a esquerda (no Hemisfério Sul - HS), levando
+        água da superfície para longe da costa ``permitindo'' a entrada de água
+        da termoclina em seu lugar.  Esse fenômeno só é possível pela conjunção
+        do vento propício, batimetria com declinação suave e quando a
+        Corrente do Brasil (CB) está afastada da Costa.
+
+        Discorra e esquematize como o vento de Nordeste causa este fenômeno em
+        Cabo Frio.  No esquema, represente o transporte de Ekman.  Apresente
+        esquemas tanto no plano horizontal como uma seção transversal ao Cabo Frio.
+
+  \item A superfície do oceano fica rebaixada próxima à costa e elevada ao
+        largo.  Já as isopicnais ``afloram'' junto a costa (ressurgência) e
+        rebaixam ao largo.
+
+  \begin{figure}[H]
+    \centering
+    \mbox{
+    \subfigure{\includegraphics[scale=0.5]{satelite-up.png}}\quad
+    \subfigure{\includegraphics[scale=0.6]{upwelling.jpg}}}
+  \end{figure}
+
+  \clearpage
+
+  \item Para ventos Sudeste o cenário é o contrário dos itens acima.
+
+  \begin{figure}[H]
+    \centering
+    \mbox{
+    \subfigure{\includegraphics[scale=0.5]{satelite-down.png}}\quad
+    \subfigure{\includegraphics[scale=0.6]{downwelling.jpg}}}
+  \end{figure}
+
+  \item O balanço de forças no caso da ressurgência no HS é o Stress do Vento ao
+        longo da Costa e Coriolis defletindo a água para à esquerda.
+
+        \begin{align*}
+          u_e &= \dfrac{1}{f\rho_{o}}\pd{\tau_y}{z} \\
+          v_e &= -\dfrac{1}{f\rho_{o}}\pd{\tau_x}{z}
+        \end{align*}
+
+
+  \item[Extra:] Demonstre o balanço de forças para a Corrente Geostrófica.
+        \begin{align*}
+          u_g &= -\frac{1}{f\rho}\pd{p}{y} \\
+          v_g &= -\frac{1}{f\rho}\pd{p}{x}
+        \end{align*}
+
+  \begin{figure}[H]
+    \centering{\includegraphics[scale=0.8]{satelite-geos.png}}
+  \end{figure}
+\end{enumerate}
+
 \end{document}
