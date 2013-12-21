@@ -1,0 +1,345 @@
+% Style.
+\documentclass[letterpaper,portuguese,12pt,pdftex]{exam}
+
+\usepackage{setspace}
+\usepackage{lineno}
+% \usepackage[left=2.5cm,top=3cm,right=2.5cm]{geometry}
+\usepackage[left=1.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+
+% Portuguese.
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{textcomp}
+
+% Font.
+\usepackage{lmodern}
+
+% Figures.
+\usepackage{epsf,epsfig}
+
+% Bibtex and extras.
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[bookmarks=false,colorlinks=true,urlcolor={green},linkcolor={green},pdfstartview={XYZ null null 1.22}]{hyperref}
+
+% Math.
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage{amssymb,amsmath}
+\everymath{\displaystyle}
+
+\newcommand{\sen}{\operatorname{sen}}
+
+% Exam.
+\addpoints
+\printanswers  % \noprintanswers
+\usepackage{color}
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+\shadedsolutions
+\renewcommand{\solutiontitle}{\noindent\textbf{Solução:}\par\noindent}
+\pagestyle{headandfoot}
+\footer{}{Página \thepage\ de \numpages}{}
+\boxedpoints
+\pointsinrightmargin
+\pointpoints{ponto}{pontos}
+\hqword{Questão}
+\hpword{Pontos}
+\hsword{Nota}
+% \qformat{\textbf{Question\thequestion}\quad(\thepoints)\hfill}
+
+% User commands.
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+% PDF metadata.
+\pdfinfo{% hyperref overrides this
+  /Title    (Prova 03 -- Oceanografia Física Descritiva)
+  /Author   (Filipe Fernandes)
+  /Creator  (Filipe Fernandes)
+  /Producer (Filipe Fernandes)
+  /Subject  (prova)
+  /Keywords (prova, oceanografia)
+}
+
+% Front page.
+\title{Prova 03 -- Oceanografia Física Descritiva}
+\author{Prof. Filipe Fernandes}
+\date{20-Dez-2013}
+
+\begin{document}
+\maketitle
+\doublespacing
+
+\vspace{1cm}
+\hbox to \textwidth{Nome e número de matrícula:\enspace\hrulefill}
+\vspace{1cm}
+
+\begin{minipage}{.8\textwidth}
+Esse exame incluí \numquestions\ questões. O número total de pontos é \numpoints.
+\vspace{1cm}
+
+Essa prova segue o Acordo Ortográfico da Língua Portuguesa de 1990 (em vigor no
+início de 2009).  Por isso erros de ortografia e gramática serão descontados da
+sua nota final.
+
+\vspace{1cm}
+
+A prova deve ser feita individualmente e sem consulta.  O aluno deverá usar
+CANETA (preta ou azul) para responder as questões – qualquer questão respondida
+a lápis não será considerada na hora da correção.  Coloque seu nome em TODAS as
+folhas e numere as mesma colocando o número total de folhas (Ex.: 1/4, 2/4 e
+etc).
+
+\vspace{1cm}
+
+Leia atentamente todas as questões: a interpretação faz parte da prova e dúvidas
+serão esclarecidas apenas após o término da mesma.
+
+\end{minipage}
+
+\clearpage
+
+% 35
+\begin{questions}
+\question[5]
+Discorra sobre a razão de {\bf aspecto dos oceanos} e como isso nos permite
+{\bf simplificar} os movimentos que observamos.  Dê exemplo de pelo menos 1
+fenômeno onde {\bf utilizamos} tal aproximação e comente pelo menos 1 fenômeno
+onde ela se torna {\bf inválida}.
+
+\begin{solution}
+  A razão de aspecto dos oceanos é semelhante a uma folha de papel, onde a
+  escala horizontal, de O(10$^{6}$ km), muito maior que que a escala vertical
+  de O(1km).
+
+  Essa aproximação é usada nos movimentos geostróficos onde a velocidade
+  vertical é mínima quando comparada com as velocidades horizontais.  Porém não
+  é válida em ressurgências costeiras, onde a velocidade vertical é de ordem
+  semelhantes as correntes horizontais.
+\end{solution}
+
+
+\question[2\half]
+Comente sobre a {\bf evolução} da medição de salinidade nos oceanos.  Sua
+resposta deve englobar {\bf o que} o método media e com qual {\bf unidade} a
+salinidade era representada.
+
+\begin{solution}
+  Para se medir salinidade absolutamente, em gramas de sal por quilogramas de
+  água, apenas se pesarmos a água coletada, evaporar toda a água e medir os sais
+  que sobram.  Devido a sua impraticabilidade Knudsen introduziu o método da
+  Clorinidade, onde se mediam os cloretos de uma amostra e se calculava os sais
+  totais em permil (\textperthousand{}).  Esse método por ser considerado
+  ``quase'' direto porque mede apenas a componente principal dos sais e se
+  calcula o resto por uma proporção conhecida e fixa para todos os oceanos.
+
+  Com o advento do condutímetro passou-se a inferir salinidade indiretamente
+  através da condutividade.  Esse método exige também uma coleta precisa dos
+  dados de temperatura e pressão, pois a condutividade é uma função de S,T,P.
+  As unidades de salinidade por condutividade evoluíram de:
+  \begin{itemize}
+    \item Unidade Prática de Salinidade (UPS) pela sua conversão de C,T,P para S.
+    \item Sem unidades, porque oceanógrafos acreditavam que a inferência de S
+          por C não contabilizava todos os sais e por isso não deviam ser
+          expressa em unidades de ``sais.''
+    \item Re-introdução da unidade de concentração de g kg$^{-1}$, por se usar
+          um uma relação mais precisa entre C e os sais representados por ela
+          devido a um maior conhecimento sobre a constituição da água do mar.
+  \end{itemize}
+\end{solution}
+
+
+\question[2\half]
+Sabendo que salinidade nos oceanos atualmente é representada em unidades de
+g kg$^{-1}$ novamente e não mais em Unidades Práticas de Salinidade (UPS).
+Calcule a salinidade para uma amostra com 630 g de água do mar, sendo e 22 g
+de massa de sal.
+
+\begin{solution}
+  \begin{align*}
+    S &= \dfrac{22 \text{g}}{630 \text{g}} \times \dfrac{10^{3} \text{g}}{1 \text{kg}} \\
+    S &= 34.92 \text{ g kg}^{-1}
+  \end{align*}
+\end{solution}
+
+\question[2]
+O que é densidade e como podemos medi-lá? (Dica: pense com as unidades que
+usamos para representá-la.)
+
+\begin{solution}
+  Densidade é a razão massa (kg) por volume (m$^3$).  Nos oceanos é muito
+  complicado realizar medições direta de densidade ($\rho$).  Mas como $\rho$ é
+  função de Salinidade, Temperatura e Pressão podemos estima-lá usando a equação
+  de estado.
+\end{solution}
+
+\question[3]
+Baseado no que se sabe do {\bf aquecimento desigual} da Terra.  Teça comentários
+sobre a {\bf estratificação} nos oceanos e desenhe perfis de {\bf temperatura}
+esquemáticos para Alta, Médias e Baixas latitudes.
+
+\begin{solution}
+  {\bf Resposta:} A Terra recebe as ondas curtas do Sol de forma desigual (mais
+  concentrado no Equador com uma diluição progressiva em direção aos Polos).
+  Isso resulta em um desbalanço de massa que é compensado com a circulação
+  oceânica.  Essa circulação, em um modelo simples, levaria leva águas quentes
+  em direção aos Polos na superfície e água frias dos Polos para o Equador em
+  profundidade.
+
+  {\bf Extra:} Porém, devido a distribuição de massa dos continentes, tamanho
+  dos oceanos, variabilidades climáticas e etc, sabemos que há uma geração de
+  massa ``fria'' maior no Hemisfério Norte do Atlântico (atualmente, em períodos
+  passados esse cenário era diferente!), fazendo com que a água ``quente'' de
+  superfície desse oceano ultrapasse o Equador e flua para Norte, contra
+  intuitivo ao modelo simplista de balanço de calor do parágrafo anterior.
+\end{solution}
+
+
+\question[5]
+A dinâmica de Ekman foi elaborada para explicar a deriva de icebergs no oceano
+polar.  Porém, essa teoria se demostrou ser um resultado mais robusto que o
+esperado e auxiliou oceanógrafos a explicarem diversos outros fenômenos
+observados nos oceanos.
+
+Cite {\bf 2} desses fenômenos e comente {\bf o papel} da dinâmica de Ekman em
+cada um deles.
+
+\begin{solution}
+  A dinâmica de Ekman é uma teoria que balancei o atrito do vento (Tensão de
+  Cisalhamento do Vento) com Coriolis (Força Fictícia em função da rotação da
+  Terra).  O resultado é uma espiral em profundidade com velocidade decaindo e
+  girando para direita (esquerda) no Hemisfério Norte (Sul).
+
+  Essa solução, apesar de elegante, é muito teórica, com diversas aproximações
+  irreais.  Adicionalmente ela não é prática nem ajuda a explicar os fenômenos
+  observados.  Mas se ``somarmos'' as correntes da espiral obtemos o
+  ``Transporte de Ekman'' integrado na coluna d'água.  Esse resultado é mais
+  robusto  que a espiral e nos ajuda a explica de ressurgências costeiras até a
+  circulação dos giros subtropicais.
+\end{solution}
+
+\question[5]
+Diga se as alternativas abaixo são {\bf Verdadeiras} ou {\bf Falsas} e explique
+
+Sobre o balanço geostrófico:
+
+\begin{itemize}
+  \item[a)] Não é um movimento forçado, por isso é uma força fictícia como
+            Coriolis.
+  \item[b)] É o balanço entre o atrito do vento e o a Força do Gradiente de
+            Pressão.
+  \item[c)] É um movimento estacionário.
+  \item[d)] Se dá apenas quando Coriolis é máximo.
+  \item[e)] Esse balanço só rege movimentos de pequena escala nos oceanos.
+\end{itemize}
+
+
+\begin{solution}
+\begin{itemize}
+  \item[a)] Falso. Não é um movimento forçado, mas não é força! Muito sim um
+            balanço de Forças.
+            Coriolis.
+  \item[b)] Falso. É o balanço entre a Força do Gradiente de Pressão (FGP )e
+            Força de Coriolis apenas.
+  \item[c)] Verdadeira. É um movimento estacionário porque não é acelerado.  A
+            força de Coriolis sempre se equipara a FGP.
+  \item[d)] Falso.  A escala espaço temporal muda em função de Coriolis, mas
+            ocorre até quando Coriolis é mínimo.
+  \item[e)] Falso. Esse balanço só rege movimentos de Meso a Larga escala.
+\end{itemize}
+\end{solution}
+
+\question[2\half]
+Imagine que duas massas d'água com $\theta$=2 \textcelsius, S=35.04 g kg$^{-1}$ e
+$\theta$=8.5\textcelsius, S=36.00 g kg$^{-1}$ se misturam em proporções
+aproximadamente {\bf iguais}.  Qual será os valores de T e S da massa de água
+que se origina dessa duas?
+
+\begin{solution}
+\begin{align*}
+  \theta &= 5.25 ^\circ\text{C} \\
+  S &= 35.52 \text{ g kg}^{-1}
+\end{align*}
+\end{solution}
+
+\question[2\half]
+  Explique os termos $a$, $b$ e $c$ da equação de estado em sua forma linear
+  abaixo:
+
+  \begin{equation}
+    \rho = \rho_o - \underbrace{\alpha(T - T_o)}_{a} +
+           \underbrace{\beta(S-S_o)}_b + \underbrace{\kappa p}_c
+    \label{eq:linear}
+  \end{equation}
+
+
+  \begin{solution}
+    $a$: Porção da densidade em função da temperatura. Expansão térmica
+    ($\alpha$) e variação de temperatura ($\Delta T$).
+
+    $b$: Porção da densidade em função da salinidade. Contração Salina
+    ($\beta$) e variabilidades de salinidade ($\Delta S$).
+
+    $c$: Porção da densidade em função da pressão. Compressão bárica ($\kappa$)
+    e pressão ($p$).
+  \end{solution}
+
+\question[2\half]
+Sobre a força/aceleração de Coriolis.  Indique se as alternativas abaixo são
+{\bf verdadeira} ou {\bf falsas} e justifique.
+
+\begin{itemize}
+  \item[a)] A força de Coriolis é máxima na Equador.
+  \item[b)] Como a força de Coriolis é fruto do produto vetorial entre a
+            velocidade relativa da partícula e o sistema de coordenadas em
+            rotação, apenas a componente vertical é importante para estudos do
+            seu efeito na horizontal.
+  \item[c)] A revolução da Terra é dada pelo dia sideral que leva em conta a
+            rotação do sistema Terra, Sol e Via Láctea.
+  \item[d)] O efeito da esfericidade da Terra é ignorado quando Coriolis é
+            aproximado para um plano Cartesiano.
+\end{itemize}
+
+\begin{solution}
+\begin{itemize}
+  \item[a)] Falsa. A força de Coriolis é {\bf mínima} na Equador.
+  \item[b)] Verdadeira, por isso retemos apenas $fu$ e $fv$ nas eqs.
+  \item[c)] Falsa. A revolução da Terra é dada pelo dia sideral que leva em
+            conta a rotação do sistema Terra-Sol.
+  \item[d)] Falsa. O efeito da esfericidade da Terra é aproximado para $\beta y$
+            em um plano Cartesiano ($f = f_o + \beta y$).
+\end{itemize}
+\end{solution}
+
+\question[2\half]
+Sobre Correntes nos oceanos.  Indique se as alternativas abaixo são
+{\bf verdadeira} ou {\bf falsas} e justifique.
+
+\begin{itemize}
+  \item[a)] Correntes são definidas pela medida instantânea das velocidades das
+            nos oceanos.
+  \item[b)] As Correntes geradas pelo vento colocam todos os oceanos em
+            conexão como uma grande ``esteira de aeroporto'' global.
+  \item[c)] As correntes costeiras e correntes oceânicas têm escalas
+            temporais mais curtas e longas respectivamente.
+  \item[d)] Correntes termohalinas fecham o balanço de Sal e Calor do globo
+            equilibrando a distribuição dos mesmo.
+\end{itemize}
+
+\begin{solution}
+\begin{itemize}
+  \item[a)] Falso. Correntes são definidas pela medida em certa escala temporal
+            definida.
+  \item[b)] Falso. As Correntes termohalinas colocam todos os oceanos em
+            conexão como uma grande ``esteira de aeroporto'' global.  As
+            correntes geradas pelo ventos fecham os giros das bacias oceânicas
+            e $\approx$ 1000 metros de profundidade.
+  \item[c)] Verdadeiro. As correntes costeiras estão restritas as plataforma
+            continentais que por sua vez é << que as bacias oceânicas.
+  \item[d)] Verdadeira. Correntes termohalinas fecham o balanço de Sal e Calor do globo
+            equilibrando a distribuição dos mesmo.
+\end{itemize}
+\end{solution}
+
+\end{questions}
+\end{document}
