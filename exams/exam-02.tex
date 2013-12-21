@@ -23,16 +23,16 @@
 \usepackage[bookmarks=false,colorlinks=true,urlcolor={green},linkcolor={green},pdfstartview={XYZ null null 1.22}]{hyperref}
 
 % Math.
-\usepackage{amssymb,amsmath}
+\usepackage{cancel}
 \usepackage{mathtools}
+\usepackage{amssymb,amsmath}
 \everymath{\displaystyle}
 
 \newcommand{\sen}{\operatorname{sen}}
 
 % Exam.
 \addpoints
-% \printanswers
-\noprintanswers
+\printanswers  % \noprintanswers
 \usepackage{color}
 \definecolor{SolutionColor}{rgb}{0.8,0.9,1}
 \shadedsolutions
@@ -77,18 +77,22 @@
 Esse exame incluí \numquestions\ questões. O número total de pontos é \numpoints.
 \vspace{1cm}
 
-Essa prova segue o Acordo Ortográfico da Língua Portuguesa de 1990 (vigor no
-início 2009).  Por isso erros de ortografia e gramática serão descontados da sua
-nota.
+Essa prova segue o Acordo Ortográfico da Língua Portuguesa de 1990 (em vigor no
+início de 2009).  Por isso erros de ortografia e gramática serão descontados da
+sua nota final.
 
 A prova deve ser feita individualmente e sem consulta.  O aluno deverá usar
 CANETA (preta ou azul) para responder as questões – qualquer questão respondida
 à lápis não será considerada na hora da correção.  Coloque seu nome em TODAS as
-folhas.
+folhas e numere as mesma colocando o número total de folhas (Ex.: 1/4, 2/4 e
+etc).
+
 
 \vspace{1cm}
 
-Leia atentamente todas as questões: a interpretação faz parte da questão.
+Leia atentamente todas as questões: a interpretação faz parte da prova e dúvidas
+serão esclarecidas apenas após o término da mesma.
+
 
 \end{minipage}
 
@@ -117,19 +121,29 @@ Qual termo {\bf não} pode existir para que a propriedade em questão seja
 
 \question[3]
 Sobre a força/aceleração de Coriolis.  Indique se as alternativas abaixo são
-VERDADEIRA ou FALSAS e explique porque.
+VERDADEIRA ou FALSAS e justifique.
 \begin{itemize}
   \item[a)] A força de Coriolis é máxima na Equador.
   \item[b)] Como a força de Coriolis é fruto do produto VETORIAL entre a velocidade
         relativa da partícula e o sistema de coordenadas em rotação, apenas a
         componente vertical é importante para estudos do seu efeito na
         horizontal.
-  \item[b)] A revolução da Terra é dada pelo dia sideral que leva em conta a rotação
+  \item[c)] A revolução da Terra é dada pelo dia sideral que leva em conta a rotação
         do sistema Terra, Sol e Via Láctea.
-  \item[c)] O efeito da esfericidade da Terra é ignorado quando Coriolis é
+  \item[d)] O efeito da esfericidade da Terra é ignorado quando Coriolis é
   aproximado para um plano Cartesiano.
-
 \end{itemize}
+
+\begin{solution}
+\begin{itemize}
+  \item[a)] Falsa. A força de Coriolis é {\bf mínima} na Equador.
+  \item[b)] Verdadeira, por isso retemos apenas fu e fv nas eqs.
+  \item[c)] Falsa. A revolução da Terra é dada pelo dia sideral que leva em
+            conta a rotação do sistema Terra-Sol.
+  \item[d)] Falsa. O efeito da esfericidade da Terra é aproximado para $\beta y$
+            um plano Cartesiano ($f = f_o + \beta y$).
+\end{itemize}
+\end{solution}
 
 
 
@@ -149,34 +163,39 @@ Subtropical}, como os que formam as correntes do Brasil e corrente do Golfo.
   \part[3]
   Explique como se dá o ``{\bf transporte de Ekman}'' assinalado pelas setas
   transparentes.  Sua resposta deve conter o {\bf balanço de forças},
-  {\bf espiral de Ekman}, e {\bf transporte} integrado na coluna d'água.
+  {\bf espiral de Ekman} e {\bf transporte} integrado na coluna d'água.
 
   \begin{solution}
-   O transporte de Ekman se da pelo balanço entre as forças de atrito e Coriolis.
-   O transporte integrado na coluna d'água é o somatório da espiral na profundidade
-   da influência de Ekman.
+   O transporte de Ekman se da pelo balanço entre as forças de atrito e
+   Coriolis, é  o transporte integrado na coluna d'água.  Ou seja, é o somatório
+   da espiral na profundidade da influência de Ekman.
+
+   Na figura o transporte está sempre a direita dos ventos (por isso deve ser
+   no Hemisfério Norte), gerando uma convergência de água no centro do giro.
   \end{solution}
 
   \part[1]
   Usando conceitos de {\bf convergência} e {\bf divergência}, explique como o
-  transporte de  Ekman gera a {\bf alta pressão} do Giro subtropical.  Qual é o
+  transporte de  Ekman gera a {\bf alta pressão} do Giro Subtropical.  Qual é o
   papel desse fenômeno na formação da {\bf água central}?
 
   \begin{solution}
-   Devido à circulação vento temos sempre transporte de Ekman para o centro do Giro.
-   Assim, temos água ``acumulando'' no centro gerando a alta pressão.  Para compensar
-   essa água, temos o bombeamento de Ekman para o interior do oceano ``empurrando''
-   a Água central.
+   Essa convergência gera uma alta pressão que acarreta em uma subsidência
+   (apontada pela seta de bombeamento de Ekman).  Essa subsidência é essencial
+   no processo de formação da Água Central, pois essa é formada o ano todo
+   devido a ``ajuda'' mecânica de Ekman.  Por outro lado, as massas de fundo e
+   intermediárias só se foram durante o inverno quando há convecção.
   \end{solution}
 
 \end{parts}
 
-\question
+\question[3]
 A corrente do Brasil nas proximidades de 20\textdegree{S} (latitude) tem
 velocidades superficiais na ordem de -0,65 m s$^{-1}$ e uma largura média de
 $\sim$ 100 km.
 
-Sabendo que a velocidade {\bf geostrófica} é dada por:
+Estime a altura da superfície livre ($\Delta h$) da corrente do Brasil usando a
+relação {\bf geostrófica}:
  \[
     fv = g\tan(\theta),
  \]
@@ -203,14 +222,9 @@ onde:
   \label{fig:BC}
 \end{figure}
 
-\begin{parts}
-
-\part[3]
-Estime a magnitude da declinação da superfície livre ($\Delta h$) que cruza a
-corrente do Brasil.
-
 
 \begin{solution}
+  Exato:
 \begin{align*}
   f &= 2\Omega\sen\left( \dfrac{-20 \pi}{180} \right) \\
   f &= 0.0001458423 \sen(-0.349)\\
@@ -225,9 +239,22 @@ corrente do Brasil.
  \Delta h &= 0.33 \text{ m}
 \end{align*}
 
-\end{solution}
+  Ordem de grandeza:
+\begin{align*}
+  f &= -10^{-5} \text { s}^{-1} \\
+  g &= 10 \text{ m s}^{-2} \\
+  v & = -10^{-1} \text{ m s}^{-1} \\
+  &\downarrow \\
+ \tan\phi &= \frac{fv}{g} \\
+ \tan\phi &= \frac{-10^{-5} \cancel{\text { s}^{-1}} \times -10^{-1} \cancel{\text{ m s}^{-1}}}{10 \cancel{\text{ m s}^{-2}}} \\
+ \tan\phi &= \frac{-10^{-6}}{10} = -10^{-7} \\
+ \frac{\Delta h}{\Delta x} &= 10^{-7} \\
+ \Delta h &= 10^5\text{ m} \times 10^{-7} \\
+  \Delta h &= 10^{-2}\text{ m} \\
+\end{align*}
+Ou seja na ordem de centímetros.
 
-\end{parts}
+\end{solution}
 
 \question
 Extra (5 pontos).
